@@ -1,0 +1,1583 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "TopLevel",
+    "printedName": "TopLevel",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "Combine",
+        "printedName": "Combine",
+        "declKind": "Import",
+        "moduleName": "BackbaseNetworking",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "BackbaseNetworking",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "BackbaseNetworking",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Combine",
+        "printedName": "Combine",
+        "declKind": "Import",
+        "moduleName": "BackbaseNetworking"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "TransactionsAPI",
+        "printedName": "TransactionsAPI",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(networkBandwidth:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "TransactionsAPI",
+                "printedName": "BackbaseNetworking.TransactionsAPI",
+                "usr": "s:18BackbaseNetworking15TransactionsAPIC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NetworkBandwidth",
+                "printedName": "BackbaseNetworking.NetworkBandwidth",
+                "hasDefaultArg": true,
+                "usr": "s:18BackbaseNetworking16NetworkBandwidthO"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:18BackbaseNetworking15TransactionsAPIC16networkBandwidthAcA07NetworkF0O_tcfc",
+            "mangledName": "$s18BackbaseNetworking15TransactionsAPIC16networkBandwidthAcA07NetworkF0O_tcfc",
+            "moduleName": "BackbaseNetworking",
+            "declAttributes": [
+              "Convenience",
+              "AccessControl"
+            ],
+            "init_kind": "Convenience"
+          },
+          {
+            "kind": "Function",
+            "name": "getTransactions",
+            "printedName": "getTransactions(userId:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AnyPublisher",
+                "printedName": "Combine.AnyPublisher<Foundation.Data, BackbaseNetworking.BackbaseAPIError>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Data",
+                    "printedName": "Foundation.Data",
+                    "usr": "s:10Foundation4DataV"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BackbaseAPIError",
+                    "printedName": "BackbaseNetworking.BackbaseAPIError",
+                    "usr": "s:18BackbaseNetworking0A8APIErrorO"
+                  }
+                ],
+                "usr": "s:7Combine12AnyPublisherV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18BackbaseNetworking15TransactionsAPIC03getC06userId7Combine12AnyPublisherVy10Foundation4DataVAA0A8APIErrorOGSi_tF",
+            "mangledName": "$s18BackbaseNetworking15TransactionsAPIC03getC06userId7Combine12AnyPublisherVy10Foundation4DataVAA0A8APIErrorOGSi_tF",
+            "moduleName": "BackbaseNetworking",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:18BackbaseNetworking15TransactionsAPIC",
+        "mangledName": "$s18BackbaseNetworking15TransactionsAPIC",
+        "moduleName": "BackbaseNetworking",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "hasMissingDesignatedInitializers": true
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "BackbaseNetworking",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "NetworkBandwidth",
+        "printedName": "NetworkBandwidth",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "high",
+            "printedName": "high",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(BackbaseNetworking.NetworkBandwidth.Type) -> BackbaseNetworking.NetworkBandwidth",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NetworkBandwidth",
+                    "printedName": "BackbaseNetworking.NetworkBandwidth",
+                    "usr": "s:18BackbaseNetworking16NetworkBandwidthO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "BackbaseNetworking.NetworkBandwidth.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NetworkBandwidth",
+                        "printedName": "BackbaseNetworking.NetworkBandwidth",
+                        "usr": "s:18BackbaseNetworking16NetworkBandwidthO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:18BackbaseNetworking16NetworkBandwidthO4highyA2CmF",
+            "mangledName": "$s18BackbaseNetworking16NetworkBandwidthO4highyA2CmF",
+            "moduleName": "BackbaseNetworking",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "medium",
+            "printedName": "medium",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(BackbaseNetworking.NetworkBandwidth.Type) -> BackbaseNetworking.NetworkBandwidth",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NetworkBandwidth",
+                    "printedName": "BackbaseNetworking.NetworkBandwidth",
+                    "usr": "s:18BackbaseNetworking16NetworkBandwidthO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "BackbaseNetworking.NetworkBandwidth.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NetworkBandwidth",
+                        "printedName": "BackbaseNetworking.NetworkBandwidth",
+                        "usr": "s:18BackbaseNetworking16NetworkBandwidthO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:18BackbaseNetworking16NetworkBandwidthO6mediumyA2CmF",
+            "mangledName": "$s18BackbaseNetworking16NetworkBandwidthO6mediumyA2CmF",
+            "moduleName": "BackbaseNetworking",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "low",
+            "printedName": "low",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(BackbaseNetworking.NetworkBandwidth.Type) -> BackbaseNetworking.NetworkBandwidth",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NetworkBandwidth",
+                    "printedName": "BackbaseNetworking.NetworkBandwidth",
+                    "usr": "s:18BackbaseNetworking16NetworkBandwidthO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "BackbaseNetworking.NetworkBandwidth.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NetworkBandwidth",
+                        "printedName": "BackbaseNetworking.NetworkBandwidth",
+                        "usr": "s:18BackbaseNetworking16NetworkBandwidthO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:18BackbaseNetworking16NetworkBandwidthO3lowyA2CmF",
+            "mangledName": "$s18BackbaseNetworking16NetworkBandwidthO3lowyA2CmF",
+            "moduleName": "BackbaseNetworking",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "==",
+            "printedName": "==(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NetworkBandwidth",
+                "printedName": "BackbaseNetworking.NetworkBandwidth",
+                "usr": "s:18BackbaseNetworking16NetworkBandwidthO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NetworkBandwidth",
+                "printedName": "BackbaseNetworking.NetworkBandwidth",
+                "usr": "s:18BackbaseNetworking16NetworkBandwidthO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18BackbaseNetworking16NetworkBandwidthO2eeoiySbAC_ACtFZ",
+            "mangledName": "$s18BackbaseNetworking16NetworkBandwidthO2eeoiySbAC_ACtFZ",
+            "moduleName": "BackbaseNetworking",
+            "static": true,
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "hashValue",
+            "printedName": "hashValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:18BackbaseNetworking16NetworkBandwidthO9hashValueSivp",
+            "mangledName": "$s18BackbaseNetworking16NetworkBandwidthO9hashValueSivp",
+            "moduleName": "BackbaseNetworking",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18BackbaseNetworking16NetworkBandwidthO9hashValueSivg",
+                "mangledName": "$s18BackbaseNetworking16NetworkBandwidthO9hashValueSivg",
+                "moduleName": "BackbaseNetworking",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "hash",
+            "printedName": "hash(into:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Hasher",
+                "printedName": "Swift.Hasher",
+                "paramValueOwnership": "InOut",
+                "usr": "s:s6HasherV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18BackbaseNetworking16NetworkBandwidthO4hash4intoys6HasherVz_tF",
+            "mangledName": "$s18BackbaseNetworking16NetworkBandwidthO4hash4intoys6HasherVz_tF",
+            "moduleName": "BackbaseNetworking",
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:18BackbaseNetworking16NetworkBandwidthO",
+        "mangledName": "$s18BackbaseNetworking16NetworkBandwidthO",
+        "moduleName": "BackbaseNetworking",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "BackbaseNetworking",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Combine",
+        "printedName": "Combine",
+        "declKind": "Import",
+        "moduleName": "BackbaseNetworking"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "BackbaseNetworking",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Combine",
+        "printedName": "Combine",
+        "declKind": "Import",
+        "moduleName": "BackbaseNetworking"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "BackbaseNetworking",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "BackbaseNetworking",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "BackbaseNetworking",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Combine",
+        "printedName": "Combine",
+        "declKind": "Import",
+        "moduleName": "BackbaseNetworking"
+      },
+      {
+        "kind": "Import",
+        "name": "Combine",
+        "printedName": "Combine",
+        "declKind": "Import",
+        "moduleName": "BackbaseNetworking",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "TransactionsOutput",
+        "printedName": "TransactionsOutput",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "numberOfSections",
+            "printedName": "numberOfSections()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18BackbaseNetworking18TransactionsOutputP16numberOfSectionsSiyF",
+            "mangledName": "$s18BackbaseNetworking18TransactionsOutputP16numberOfSectionsSiyF",
+            "moduleName": "BackbaseNetworking",
+            "genericSig": "<τ_0_0 where τ_0_0 : BackbaseNetworking.TransactionsOutput>",
+            "sugared_genericSig": "<Self where Self : BackbaseNetworking.TransactionsOutput>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "numberOfItemsInSection",
+            "printedName": "numberOfItemsInSection(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18BackbaseNetworking18TransactionsOutputP22numberOfItemsInSectionyS2iF",
+            "mangledName": "$s18BackbaseNetworking18TransactionsOutputP22numberOfItemsInSectionyS2iF",
+            "moduleName": "BackbaseNetworking",
+            "genericSig": "<τ_0_0 where τ_0_0 : BackbaseNetworking.TransactionsOutput>",
+            "sugared_genericSig": "<Self where Self : BackbaseNetworking.TransactionsOutput>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:18BackbaseNetworking18TransactionsOutputP",
+        "mangledName": "$s18BackbaseNetworking18TransactionsOutputP",
+        "moduleName": "BackbaseNetworking",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "TransactionsOutputResult",
+        "printedName": "TransactionsOutputResult",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "result",
+            "printedName": "result",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:18BackbaseNetworking24TransactionsOutputResultV6resultSaySSGSgvp",
+            "mangledName": "$s18BackbaseNetworking24TransactionsOutputResultV6resultSaySSGSgvp",
+            "moduleName": "BackbaseNetworking",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "[Swift.String]?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[Swift.String]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18BackbaseNetworking24TransactionsOutputResultV6resultSaySSGSgvg",
+                "mangledName": "$s18BackbaseNetworking24TransactionsOutputResultV6resultSaySSGSgvg",
+                "moduleName": "BackbaseNetworking",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "success",
+            "printedName": "success",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:18BackbaseNetworking24TransactionsOutputResultV7successSbvp",
+            "mangledName": "$s18BackbaseNetworking24TransactionsOutputResultV7successSbvp",
+            "moduleName": "BackbaseNetworking",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18BackbaseNetworking24TransactionsOutputResultV7successSbvg",
+                "mangledName": "$s18BackbaseNetworking24TransactionsOutputResultV7successSbvg",
+                "moduleName": "BackbaseNetworking",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:18BackbaseNetworking24TransactionsOutputResultV",
+        "mangledName": "$s18BackbaseNetworking24TransactionsOutputResultV",
+        "moduleName": "BackbaseNetworking",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "TransactionsOutputTests",
+        "printedName": "TransactionsOutputTests",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(output:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "TransactionsOutputTests",
+                "printedName": "BackbaseNetworking.TransactionsOutputTests",
+                "usr": "s:18BackbaseNetworking23TransactionsOutputTestsC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "TransactionsOutput",
+                "printedName": "BackbaseNetworking.TransactionsOutput",
+                "usr": "s:18BackbaseNetworking18TransactionsOutputP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:18BackbaseNetworking23TransactionsOutputTestsC6outputAcA0cD0_p_tcfc",
+            "mangledName": "$s18BackbaseNetworking23TransactionsOutputTestsC6outputAcA0cD0_p_tcfc",
+            "moduleName": "BackbaseNetworking",
+            "declAttributes": [
+              "Convenience",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "init_kind": "Convenience"
+          },
+          {
+            "kind": "Function",
+            "name": "testUser",
+            "printedName": "testUser(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18BackbaseNetworking23TransactionsOutputTestsC8testUseryySiF",
+            "mangledName": "$s18BackbaseNetworking23TransactionsOutputTestsC8testUseryySiF",
+            "moduleName": "BackbaseNetworking",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "testUserPublisher",
+            "printedName": "testUserPublisher",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AnyPublisher",
+                "printedName": "Combine.AnyPublisher<BackbaseNetworking.TransactionsOutputResult, Swift.Never>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TransactionsOutputResult",
+                    "printedName": "BackbaseNetworking.TransactionsOutputResult",
+                    "usr": "s:18BackbaseNetworking24TransactionsOutputResultV"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Never",
+                    "printedName": "Swift.Never",
+                    "usr": "s:s5NeverO"
+                  }
+                ],
+                "usr": "s:7Combine12AnyPublisherV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:18BackbaseNetworking23TransactionsOutputTestsC17testUserPublisher7Combine03AnyH0VyAA0cD6ResultVs5NeverOGvp",
+            "mangledName": "$s18BackbaseNetworking23TransactionsOutputTestsC17testUserPublisher7Combine03AnyH0VyAA0cD6ResultVs5NeverOGvp",
+            "moduleName": "BackbaseNetworking",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AnyPublisher",
+                    "printedName": "Combine.AnyPublisher<BackbaseNetworking.TransactionsOutputResult, Swift.Never>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "TransactionsOutputResult",
+                        "printedName": "BackbaseNetworking.TransactionsOutputResult",
+                        "usr": "s:18BackbaseNetworking24TransactionsOutputResultV"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Never",
+                        "printedName": "Swift.Never",
+                        "usr": "s:s5NeverO"
+                      }
+                    ],
+                    "usr": "s:7Combine12AnyPublisherV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18BackbaseNetworking23TransactionsOutputTestsC17testUserPublisher7Combine03AnyH0VyAA0cD6ResultVs5NeverOGvg",
+                "mangledName": "$s18BackbaseNetworking23TransactionsOutputTestsC17testUserPublisher7Combine03AnyH0VyAA0cD6ResultVs5NeverOGvg",
+                "moduleName": "BackbaseNetworking",
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:18BackbaseNetworking23TransactionsOutputTestsC",
+        "mangledName": "$s18BackbaseNetworking23TransactionsOutputTestsC",
+        "moduleName": "BackbaseNetworking",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "hasMissingDesignatedInitializers": true
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "BackbaseNetworking",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "BackbaseAPIError",
+        "printedName": "BackbaseAPIError",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "offline",
+            "printedName": "offline",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(BackbaseNetworking.BackbaseAPIError.Type) -> BackbaseNetworking.BackbaseAPIError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BackbaseAPIError",
+                    "printedName": "BackbaseNetworking.BackbaseAPIError",
+                    "usr": "s:18BackbaseNetworking0A8APIErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "BackbaseNetworking.BackbaseAPIError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "BackbaseAPIError",
+                        "printedName": "BackbaseNetworking.BackbaseAPIError",
+                        "usr": "s:18BackbaseNetworking0A8APIErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:18BackbaseNetworking0A8APIErrorO7offlineyA2CmF",
+            "mangledName": "$s18BackbaseNetworking0A8APIErrorO7offlineyA2CmF",
+            "moduleName": "BackbaseNetworking",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "noResource",
+            "printedName": "noResource",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(BackbaseNetworking.BackbaseAPIError.Type) -> BackbaseNetworking.BackbaseAPIError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BackbaseAPIError",
+                    "printedName": "BackbaseNetworking.BackbaseAPIError",
+                    "usr": "s:18BackbaseNetworking0A8APIErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "BackbaseNetworking.BackbaseAPIError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "BackbaseAPIError",
+                        "printedName": "BackbaseNetworking.BackbaseAPIError",
+                        "usr": "s:18BackbaseNetworking0A8APIErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:18BackbaseNetworking0A8APIErrorO10noResourceyA2CmF",
+            "mangledName": "$s18BackbaseNetworking0A8APIErrorO10noResourceyA2CmF",
+            "moduleName": "BackbaseNetworking",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "serverError",
+            "printedName": "serverError",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(BackbaseNetworking.BackbaseAPIError.Type) -> BackbaseNetworking.BackbaseAPIError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BackbaseAPIError",
+                    "printedName": "BackbaseNetworking.BackbaseAPIError",
+                    "usr": "s:18BackbaseNetworking0A8APIErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "BackbaseNetworking.BackbaseAPIError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "BackbaseAPIError",
+                        "printedName": "BackbaseNetworking.BackbaseAPIError",
+                        "usr": "s:18BackbaseNetworking0A8APIErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:18BackbaseNetworking0A8APIErrorO11serverErroryA2CmF",
+            "mangledName": "$s18BackbaseNetworking0A8APIErrorO11serverErroryA2CmF",
+            "moduleName": "BackbaseNetworking",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "invalidUser",
+            "printedName": "invalidUser",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(BackbaseNetworking.BackbaseAPIError.Type) -> BackbaseNetworking.BackbaseAPIError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BackbaseAPIError",
+                    "printedName": "BackbaseNetworking.BackbaseAPIError",
+                    "usr": "s:18BackbaseNetworking0A8APIErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "BackbaseNetworking.BackbaseAPIError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "BackbaseAPIError",
+                        "printedName": "BackbaseNetworking.BackbaseAPIError",
+                        "usr": "s:18BackbaseNetworking0A8APIErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:18BackbaseNetworking0A8APIErrorO11invalidUseryA2CmF",
+            "mangledName": "$s18BackbaseNetworking0A8APIErrorO11invalidUseryA2CmF",
+            "moduleName": "BackbaseNetworking",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "unknown",
+            "printedName": "unknown",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(BackbaseNetworking.BackbaseAPIError.Type) -> BackbaseNetworking.BackbaseAPIError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BackbaseAPIError",
+                    "printedName": "BackbaseNetworking.BackbaseAPIError",
+                    "usr": "s:18BackbaseNetworking0A8APIErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "BackbaseNetworking.BackbaseAPIError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "BackbaseAPIError",
+                        "printedName": "BackbaseNetworking.BackbaseAPIError",
+                        "usr": "s:18BackbaseNetworking0A8APIErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:18BackbaseNetworking0A8APIErrorO7unknownyA2CmF",
+            "mangledName": "$s18BackbaseNetworking0A8APIErrorO7unknownyA2CmF",
+            "moduleName": "BackbaseNetworking",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "==",
+            "printedName": "==(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "BackbaseAPIError",
+                "printedName": "BackbaseNetworking.BackbaseAPIError",
+                "usr": "s:18BackbaseNetworking0A8APIErrorO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "BackbaseAPIError",
+                "printedName": "BackbaseNetworking.BackbaseAPIError",
+                "usr": "s:18BackbaseNetworking0A8APIErrorO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18BackbaseNetworking0A8APIErrorO2eeoiySbAC_ACtFZ",
+            "mangledName": "$s18BackbaseNetworking0A8APIErrorO2eeoiySbAC_ACtFZ",
+            "moduleName": "BackbaseNetworking",
+            "static": true,
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "hashValue",
+            "printedName": "hashValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:18BackbaseNetworking0A8APIErrorO9hashValueSivp",
+            "mangledName": "$s18BackbaseNetworking0A8APIErrorO9hashValueSivp",
+            "moduleName": "BackbaseNetworking",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18BackbaseNetworking0A8APIErrorO9hashValueSivg",
+                "mangledName": "$s18BackbaseNetworking0A8APIErrorO9hashValueSivg",
+                "moduleName": "BackbaseNetworking",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "hash",
+            "printedName": "hash(into:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Hasher",
+                "printedName": "Swift.Hasher",
+                "paramValueOwnership": "InOut",
+                "usr": "s:s6HasherV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18BackbaseNetworking0A8APIErrorO4hash4intoys6HasherVz_tF",
+            "mangledName": "$s18BackbaseNetworking0A8APIErrorO4hash4intoys6HasherVz_tF",
+            "moduleName": "BackbaseNetworking",
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "errorDescription",
+            "printedName": "errorDescription",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:18BackbaseNetworking0A8APIErrorO16errorDescriptionSSSgvp",
+            "mangledName": "$s18BackbaseNetworking0A8APIErrorO16errorDescriptionSSSgvp",
+            "moduleName": "BackbaseNetworking",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18BackbaseNetworking0A8APIErrorO16errorDescriptionSSSgvg",
+                "mangledName": "$s18BackbaseNetworking0A8APIErrorO16errorDescriptionSSSgvg",
+                "moduleName": "BackbaseNetworking",
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:18BackbaseNetworking0A8APIErrorO",
+        "mangledName": "$s18BackbaseNetworking0A8APIErrorO",
+        "moduleName": "BackbaseNetworking",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Error",
+            "printedName": "Error",
+            "usr": "s:s5ErrorP",
+            "mangledName": "$ss5ErrorP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "LocalizedError",
+            "printedName": "LocalizedError",
+            "usr": "s:10Foundation14LocalizedErrorP",
+            "mangledName": "$s10Foundation14LocalizedErrorP"
+          }
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/aleksander\/Projects\/Interviews\/Assignments\/iOS-Backbase\/Backbase-RnD\/DemoApp\/BackbaseNetworking\/Sources\/Internal\/ResourceTypes.swift",
+      "kind": "StringLiteral",
+      "offset": 177,
+      "length": 9,
+      "value": "\"no_file\""
+    },
+    {
+      "filePath": "\/Users\/aleksander\/Projects\/Interviews\/Assignments\/iOS-Backbase\/Backbase-RnD\/DemoApp\/BackbaseNetworking\/Sources\/Internal\/ResourceTypes.swift",
+      "kind": "StringLiteral",
+      "offset": 204,
+      "length": 20,
+      "value": "\"empty_transactions\""
+    },
+    {
+      "filePath": "\/Users\/aleksander\/Projects\/Interviews\/Assignments\/iOS-Backbase\/Backbase-RnD\/DemoApp\/BackbaseNetworking\/Sources\/Internal\/ResourceTypes.swift",
+      "kind": "StringLiteral",
+      "offset": 250,
+      "length": 23,
+      "value": "\"single_transactions_P\""
+    },
+    {
+      "filePath": "\/Users\/aleksander\/Projects\/Interviews\/Assignments\/iOS-Backbase\/Backbase-RnD\/DemoApp\/BackbaseNetworking\/Sources\/Internal\/ResourceTypes.swift",
+      "kind": "StringLiteral",
+      "offset": 300,
+      "length": 24,
+      "value": "\"grouped_transactions_P\""
+    },
+    {
+      "filePath": "\/Users\/aleksander\/Projects\/Interviews\/Assignments\/iOS-Backbase\/Backbase-RnD\/DemoApp\/BackbaseNetworking\/Sources\/Internal\/ResourceTypes.swift",
+      "kind": "StringLiteral",
+      "offset": 352,
+      "length": 23,
+      "value": "\"single_transactions_C\""
+    },
+    {
+      "filePath": "\/Users\/aleksander\/Projects\/Interviews\/Assignments\/iOS-Backbase\/Backbase-RnD\/DemoApp\/BackbaseNetworking\/Sources\/Internal\/ResourceTypes.swift",
+      "kind": "StringLiteral",
+      "offset": 404,
+      "length": 24,
+      "value": "\"grouped_transactions_C\""
+    },
+    {
+      "filePath": "\/Users\/aleksander\/Projects\/Interviews\/Assignments\/iOS-Backbase\/Backbase-RnD\/DemoApp\/BackbaseNetworking\/Sources\/Internal\/ResourceTypes.swift",
+      "kind": "StringLiteral",
+      "offset": 463,
+      "length": 31,
+      "value": "\"single_transactions_P_C_mixed\""
+    },
+    {
+      "filePath": "\/Users\/aleksander\/Projects\/Interviews\/Assignments\/iOS-Backbase\/Backbase-RnD\/DemoApp\/BackbaseNetworking\/Sources\/Internal\/ResourceTypes.swift",
+      "kind": "StringLiteral",
+      "offset": 530,
+      "length": 32,
+      "value": "\"grouped_transactions_P_C_mixed\""
+    },
+    {
+      "filePath": "\/Users\/aleksander\/Projects\/Interviews\/Assignments\/iOS-Backbase\/Backbase-RnD\/DemoApp\/BackbaseNetworking\/Sources\/Internal\/ResourceTypes.swift",
+      "kind": "StringLiteral",
+      "offset": 177,
+      "length": 9,
+      "value": "\"no_file\""
+    },
+    {
+      "filePath": "\/Users\/aleksander\/Projects\/Interviews\/Assignments\/iOS-Backbase\/Backbase-RnD\/DemoApp\/BackbaseNetworking\/Sources\/Internal\/ResourceTypes.swift",
+      "kind": "StringLiteral",
+      "offset": 204,
+      "length": 20,
+      "value": "\"empty_transactions\""
+    },
+    {
+      "filePath": "\/Users\/aleksander\/Projects\/Interviews\/Assignments\/iOS-Backbase\/Backbase-RnD\/DemoApp\/BackbaseNetworking\/Sources\/Internal\/ResourceTypes.swift",
+      "kind": "StringLiteral",
+      "offset": 250,
+      "length": 23,
+      "value": "\"single_transactions_P\""
+    },
+    {
+      "filePath": "\/Users\/aleksander\/Projects\/Interviews\/Assignments\/iOS-Backbase\/Backbase-RnD\/DemoApp\/BackbaseNetworking\/Sources\/Internal\/ResourceTypes.swift",
+      "kind": "StringLiteral",
+      "offset": 300,
+      "length": 24,
+      "value": "\"grouped_transactions_P\""
+    },
+    {
+      "filePath": "\/Users\/aleksander\/Projects\/Interviews\/Assignments\/iOS-Backbase\/Backbase-RnD\/DemoApp\/BackbaseNetworking\/Sources\/Internal\/ResourceTypes.swift",
+      "kind": "StringLiteral",
+      "offset": 352,
+      "length": 23,
+      "value": "\"single_transactions_C\""
+    },
+    {
+      "filePath": "\/Users\/aleksander\/Projects\/Interviews\/Assignments\/iOS-Backbase\/Backbase-RnD\/DemoApp\/BackbaseNetworking\/Sources\/Internal\/ResourceTypes.swift",
+      "kind": "StringLiteral",
+      "offset": 404,
+      "length": 24,
+      "value": "\"grouped_transactions_C\""
+    },
+    {
+      "filePath": "\/Users\/aleksander\/Projects\/Interviews\/Assignments\/iOS-Backbase\/Backbase-RnD\/DemoApp\/BackbaseNetworking\/Sources\/Internal\/ResourceTypes.swift",
+      "kind": "StringLiteral",
+      "offset": 463,
+      "length": 31,
+      "value": "\"single_transactions_P_C_mixed\""
+    },
+    {
+      "filePath": "\/Users\/aleksander\/Projects\/Interviews\/Assignments\/iOS-Backbase\/Backbase-RnD\/DemoApp\/BackbaseNetworking\/Sources\/Internal\/ResourceTypes.swift",
+      "kind": "StringLiteral",
+      "offset": 530,
+      "length": 32,
+      "value": "\"grouped_transactions_P_C_mixed\""
+    },
+    {
+      "filePath": "\/Users\/aleksander\/Projects\/Interviews\/Assignments\/iOS-Backbase\/Backbase-RnD\/DemoApp\/BackbaseNetworking\/Sources\/Internal\/TransactionsSolution\/TransactionModels.swift",
+      "kind": "StringLiteral",
+      "offset": 577,
+      "length": 9,
+      "value": "\"PENDING\""
+    },
+    {
+      "filePath": "\/Users\/aleksander\/Projects\/Interviews\/Assignments\/iOS-Backbase\/Backbase-RnD\/DemoApp\/BackbaseNetworking\/Sources\/Internal\/TransactionsSolution\/TransactionModels.swift",
+      "kind": "StringLiteral",
+      "offset": 612,
+      "length": 11,
+      "value": "\"COMPLETED\""
+    },
+    {
+      "filePath": "\/Users\/aleksander\/Projects\/Interviews\/Assignments\/iOS-Backbase\/Backbase-RnD\/DemoApp\/BackbaseNetworking\/Sources\/Internal\/TransactionsSolution\/TransactionModels.swift",
+      "kind": "StringLiteral",
+      "offset": 577,
+      "length": 9,
+      "value": "\"PENDING\""
+    },
+    {
+      "filePath": "\/Users\/aleksander\/Projects\/Interviews\/Assignments\/iOS-Backbase\/Backbase-RnD\/DemoApp\/BackbaseNetworking\/Sources\/Internal\/TransactionsSolution\/TransactionModels.swift",
+      "kind": "StringLiteral",
+      "offset": 612,
+      "length": 11,
+      "value": "\"COMPLETED\""
+    },
+    {
+      "filePath": "\/Users\/aleksander\/Projects\/Interviews\/Assignments\/iOS-Backbase\/Backbase-RnD\/DemoApp\/BackbaseNetworking\/Sources\/Internal\/TransactionsSolution\/TransactionModels.swift",
+      "kind": "StringLiteral",
+      "offset": 691,
+      "length": 6,
+      "value": "\"CRDT\""
+    },
+    {
+      "filePath": "\/Users\/aleksander\/Projects\/Interviews\/Assignments\/iOS-Backbase\/Backbase-RnD\/DemoApp\/BackbaseNetworking\/Sources\/Internal\/TransactionsSolution\/TransactionModels.swift",
+      "kind": "StringLiteral",
+      "offset": 719,
+      "length": 6,
+      "value": "\"DBIT\""
+    },
+    {
+      "filePath": "\/Users\/aleksander\/Projects\/Interviews\/Assignments\/iOS-Backbase\/Backbase-RnD\/DemoApp\/BackbaseNetworking\/Sources\/Internal\/TransactionsSolution\/TransactionModels.swift",
+      "kind": "StringLiteral",
+      "offset": 691,
+      "length": 6,
+      "value": "\"CRDT\""
+    },
+    {
+      "filePath": "\/Users\/aleksander\/Projects\/Interviews\/Assignments\/iOS-Backbase\/Backbase-RnD\/DemoApp\/BackbaseNetworking\/Sources\/Internal\/TransactionsSolution\/TransactionModels.swift",
+      "kind": "StringLiteral",
+      "offset": 719,
+      "length": 6,
+      "value": "\"DBIT\""
+    },
+    {
+      "filePath": "\/Users\/aleksander\/Projects\/Interviews\/Assignments\/iOS-Backbase\/Backbase-RnD\/DemoApp\/BackbaseNetworking\/Sources\/Internal\/TransactionsSolution\/TransactionsUsers.swift",
+      "kind": "IntegerLiteral",
+      "offset": 255,
+      "length": 4,
+      "value": "9999"
+    },
+    {
+      "filePath": "\/Users\/aleksander\/Projects\/Interviews\/Assignments\/iOS-Backbase\/Backbase-RnD\/DemoApp\/BackbaseNetworking\/Sources\/Internal\/TransactionsSolution\/TransactionsUsers.swift",
+      "kind": "IntegerLiteral",
+      "offset": 318,
+      "length": 5,
+      "value": "10000"
+    },
+    {
+      "filePath": "\/Users\/aleksander\/Projects\/Interviews\/Assignments\/iOS-Backbase\/Backbase-RnD\/DemoApp\/BackbaseNetworking\/Sources\/Internal\/TransactionsSolution\/TransactionsUsers.swift",
+      "kind": "IntegerLiteral",
+      "offset": 400,
+      "length": 5,
+      "value": "10010"
+    },
+    {
+      "filePath": "\/Users\/aleksander\/Projects\/Interviews\/Assignments\/iOS-Backbase\/Backbase-RnD\/DemoApp\/BackbaseNetworking\/Sources\/Internal\/TransactionsSolution\/TransactionsUsers.swift",
+      "kind": "IntegerLiteral",
+      "offset": 484,
+      "length": 5,
+      "value": "10011"
+    },
+    {
+      "filePath": "\/Users\/aleksander\/Projects\/Interviews\/Assignments\/iOS-Backbase\/Backbase-RnD\/DemoApp\/BackbaseNetworking\/Sources\/Internal\/TransactionsSolution\/TransactionsUsers.swift",
+      "kind": "IntegerLiteral",
+      "offset": 570,
+      "length": 5,
+      "value": "10012"
+    },
+    {
+      "filePath": "\/Users\/aleksander\/Projects\/Interviews\/Assignments\/iOS-Backbase\/Backbase-RnD\/DemoApp\/BackbaseNetworking\/Sources\/Internal\/TransactionsSolution\/TransactionsUsers.swift",
+      "kind": "IntegerLiteral",
+      "offset": 658,
+      "length": 5,
+      "value": "10013"
+    },
+    {
+      "filePath": "\/Users\/aleksander\/Projects\/Interviews\/Assignments\/iOS-Backbase\/Backbase-RnD\/DemoApp\/BackbaseNetworking\/Sources\/Internal\/TransactionsSolution\/TransactionsUsers.swift",
+      "kind": "IntegerLiteral",
+      "offset": 763,
+      "length": 5,
+      "value": "10014"
+    },
+    {
+      "filePath": "\/Users\/aleksander\/Projects\/Interviews\/Assignments\/iOS-Backbase\/Backbase-RnD\/DemoApp\/BackbaseNetworking\/Sources\/Internal\/TransactionsSolution\/TransactionsUsers.swift",
+      "kind": "IntegerLiteral",
+      "offset": 869,
+      "length": 5,
+      "value": "10015"
+    },
+    {
+      "filePath": "\/Users\/aleksander\/Projects\/Interviews\/Assignments\/iOS-Backbase\/Backbase-RnD\/DemoApp\/BackbaseNetworking\/Sources\/Internal\/TransactionsSolution\/TransactionsUsers.swift",
+      "kind": "IntegerLiteral",
+      "offset": 255,
+      "length": 4,
+      "value": "9999"
+    },
+    {
+      "filePath": "\/Users\/aleksander\/Projects\/Interviews\/Assignments\/iOS-Backbase\/Backbase-RnD\/DemoApp\/BackbaseNetworking\/Sources\/Internal\/TransactionsSolution\/TransactionsUsers.swift",
+      "kind": "IntegerLiteral",
+      "offset": 318,
+      "length": 5,
+      "value": "10000"
+    },
+    {
+      "filePath": "\/Users\/aleksander\/Projects\/Interviews\/Assignments\/iOS-Backbase\/Backbase-RnD\/DemoApp\/BackbaseNetworking\/Sources\/Internal\/TransactionsSolution\/TransactionsUsers.swift",
+      "kind": "IntegerLiteral",
+      "offset": 400,
+      "length": 5,
+      "value": "10010"
+    },
+    {
+      "filePath": "\/Users\/aleksander\/Projects\/Interviews\/Assignments\/iOS-Backbase\/Backbase-RnD\/DemoApp\/BackbaseNetworking\/Sources\/Internal\/TransactionsSolution\/TransactionsUsers.swift",
+      "kind": "IntegerLiteral",
+      "offset": 484,
+      "length": 5,
+      "value": "10011"
+    },
+    {
+      "filePath": "\/Users\/aleksander\/Projects\/Interviews\/Assignments\/iOS-Backbase\/Backbase-RnD\/DemoApp\/BackbaseNetworking\/Sources\/Internal\/TransactionsSolution\/TransactionsUsers.swift",
+      "kind": "IntegerLiteral",
+      "offset": 570,
+      "length": 5,
+      "value": "10012"
+    },
+    {
+      "filePath": "\/Users\/aleksander\/Projects\/Interviews\/Assignments\/iOS-Backbase\/Backbase-RnD\/DemoApp\/BackbaseNetworking\/Sources\/Internal\/TransactionsSolution\/TransactionsUsers.swift",
+      "kind": "IntegerLiteral",
+      "offset": 658,
+      "length": 5,
+      "value": "10013"
+    },
+    {
+      "filePath": "\/Users\/aleksander\/Projects\/Interviews\/Assignments\/iOS-Backbase\/Backbase-RnD\/DemoApp\/BackbaseNetworking\/Sources\/Internal\/TransactionsSolution\/TransactionsUsers.swift",
+      "kind": "IntegerLiteral",
+      "offset": 763,
+      "length": 5,
+      "value": "10014"
+    },
+    {
+      "filePath": "\/Users\/aleksander\/Projects\/Interviews\/Assignments\/iOS-Backbase\/Backbase-RnD\/DemoApp\/BackbaseNetworking\/Sources\/Internal\/TransactionsSolution\/TransactionsUsers.swift",
+      "kind": "IntegerLiteral",
+      "offset": 869,
+      "length": 5,
+      "value": "10015"
+    },
+    {
+      "filePath": "\/Users\/aleksander\/Projects\/Interviews\/Assignments\/iOS-Backbase\/Backbase-RnD\/DemoApp\/BackbaseNetworking\/Sources\/Internal\/TransactionsSolution\/TransactionsUsers.swift",
+      "kind": "IntegerLiteral",
+      "offset": 255,
+      "length": 4,
+      "value": "9999"
+    },
+    {
+      "filePath": "\/Users\/aleksander\/Projects\/Interviews\/Assignments\/iOS-Backbase\/Backbase-RnD\/DemoApp\/BackbaseNetworking\/Sources\/Internal\/TransactionsSolution\/TransactionsUsers.swift",
+      "kind": "IntegerLiteral",
+      "offset": 318,
+      "length": 5,
+      "value": "10000"
+    },
+    {
+      "filePath": "\/Users\/aleksander\/Projects\/Interviews\/Assignments\/iOS-Backbase\/Backbase-RnD\/DemoApp\/BackbaseNetworking\/Sources\/Internal\/TransactionsSolution\/TransactionsUsers.swift",
+      "kind": "IntegerLiteral",
+      "offset": 400,
+      "length": 5,
+      "value": "10010"
+    },
+    {
+      "filePath": "\/Users\/aleksander\/Projects\/Interviews\/Assignments\/iOS-Backbase\/Backbase-RnD\/DemoApp\/BackbaseNetworking\/Sources\/Internal\/TransactionsSolution\/TransactionsUsers.swift",
+      "kind": "IntegerLiteral",
+      "offset": 484,
+      "length": 5,
+      "value": "10011"
+    },
+    {
+      "filePath": "\/Users\/aleksander\/Projects\/Interviews\/Assignments\/iOS-Backbase\/Backbase-RnD\/DemoApp\/BackbaseNetworking\/Sources\/Internal\/TransactionsSolution\/TransactionsUsers.swift",
+      "kind": "IntegerLiteral",
+      "offset": 570,
+      "length": 5,
+      "value": "10012"
+    },
+    {
+      "filePath": "\/Users\/aleksander\/Projects\/Interviews\/Assignments\/iOS-Backbase\/Backbase-RnD\/DemoApp\/BackbaseNetworking\/Sources\/Internal\/TransactionsSolution\/TransactionsUsers.swift",
+      "kind": "IntegerLiteral",
+      "offset": 658,
+      "length": 5,
+      "value": "10013"
+    },
+    {
+      "filePath": "\/Users\/aleksander\/Projects\/Interviews\/Assignments\/iOS-Backbase\/Backbase-RnD\/DemoApp\/BackbaseNetworking\/Sources\/Internal\/TransactionsSolution\/TransactionsUsers.swift",
+      "kind": "IntegerLiteral",
+      "offset": 763,
+      "length": 5,
+      "value": "10014"
+    },
+    {
+      "filePath": "\/Users\/aleksander\/Projects\/Interviews\/Assignments\/iOS-Backbase\/Backbase-RnD\/DemoApp\/BackbaseNetworking\/Sources\/Internal\/TransactionsSolution\/TransactionsUsers.swift",
+      "kind": "IntegerLiteral",
+      "offset": 869,
+      "length": 5,
+      "value": "10015"
+    },
+    {
+      "filePath": "\/Users\/aleksander\/Projects\/Interviews\/Assignments\/iOS-Backbase\/Backbase-RnD\/DemoApp\/BackbaseNetworking\/Sources\/Internal\/TransactionsSolution\/DateFormatterContract.swift",
+      "kind": "IntegerLiteral",
+      "offset": 457,
+      "length": 1,
+      "value": "0"
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+framework module BackbaseNetworking {
+  umbrella header "BackbaseNetworking.h"
+
+  export *
+  module * { export * }
+}
+
+module BackbaseNetworking.Swift {
+  header "BackbaseNetworking-Swift.h"
+  requires objc
+}

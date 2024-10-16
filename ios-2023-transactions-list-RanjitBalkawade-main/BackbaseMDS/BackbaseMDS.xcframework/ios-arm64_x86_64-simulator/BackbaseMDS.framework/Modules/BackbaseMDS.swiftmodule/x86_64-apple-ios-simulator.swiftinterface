@@ -1,0 +1,118 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.7.2 (swiftlang-5.7.2.135.5 clang-1400.0.29.51)
+// swift-module-flags: -target x86_64-apple-ios15.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name BackbaseMDS
+// swift-module-flags-ignorable: -enable-bare-slash-regex
+@_exported import BackbaseMDS
+import Swift
+import UIKit
+import _Concurrency
+import _StringProcessing
+extension BackbaseMDS.BackbaseUI {
+  public struct Shadows {
+    public var none: BackbaseMDS.BackbaseUI.Shadow
+    public var small: BackbaseMDS.BackbaseUI.Shadow
+    public var medium: BackbaseMDS.BackbaseUI.Shadow
+    public var large: BackbaseMDS.BackbaseUI.Shadow
+    public var xLarge: BackbaseMDS.BackbaseUI.Shadow
+  }
+  public struct Shadow : Swift.Equatable {
+    public var offset: CoreFoundation.CGSize
+    public var opacity: Swift.Float
+    public var radius: CoreFoundation.CGFloat
+    public var color: UIKit.UIColor
+    public init(offset: CoreFoundation.CGSize, opacity: Swift.Float, radius: CoreFoundation.CGFloat, color: UIKit.UIColor)
+    public static func == (a: BackbaseMDS.BackbaseUI.Shadow, b: BackbaseMDS.BackbaseUI.Shadow) -> Swift.Bool
+  }
+}
+extension BackbaseMDS.BackbaseUI {
+  public struct Font {
+    public init()
+    public var preferredFont: (_ style: UIKit.UIFont.TextStyle, _ weight: UIKit.UIFont.Weight) -> UIKit.UIFont
+  }
+}
+extension BackbaseMDS.BackbaseUI {
+  public struct Radius {
+    public var none: CoreFoundation.CGFloat
+    public var small: CoreFoundation.CGFloat
+    public var medium: CoreFoundation.CGFloat
+    public var large: CoreFoundation.CGFloat
+  }
+}
+extension BackbaseMDS.BackbaseUI {
+  public struct Spacer {
+    public var xxs: CoreFoundation.CGFloat
+    public var xs: CoreFoundation.CGFloat
+    public var sm: CoreFoundation.CGFloat
+    public var md: CoreFoundation.CGFloat
+    public var lg: CoreFoundation.CGFloat
+    public var xl: CoreFoundation.CGFloat
+  }
+}
+extension BackbaseMDS.BackbaseUI {
+  public struct Color {
+    public var primary: UIKit.UIColor
+    public var success: UIKit.UIColor
+    public var secondary: UIKit.UIColor
+    public var danger: UIKit.UIColor
+    public var info: UIKit.UIColor
+    public var warning: UIKit.UIColor
+    public var accent: UIKit.UIColor
+    public var onPrimary: UIKit.UIColor
+    public var onSuccess: UIKit.UIColor
+    public var onSecondary: UIKit.UIColor
+    public var onDanger: UIKit.UIColor
+    public var onInfo: UIKit.UIColor
+    public var onWarning: UIKit.UIColor
+    public var onAccent: UIKit.UIColor
+    public var foundation: UIKit.UIColor
+    public var foundationSecondary: UIKit.UIColor
+    public var surfacePrimary: UIKit.UIColor
+    public var surfaceSecondary: UIKit.UIColor
+    public var onSurfaceSecondary: UIKit.UIColor
+    public var onSurfaceSecondarySupport: UIKit.UIColor
+    public var onSurfaceSecondaryDisabled: UIKit.UIColor
+    public var surfaceDisabled: UIKit.UIColor
+    public var textDefault: UIKit.UIColor
+    public var textSupport: UIKit.UIColor
+    public var textDisabled: UIKit.UIColor
+    public var neutral00: UIKit.UIColor
+    public var neutral10: UIKit.UIColor
+    public var neutral20: UIKit.UIColor
+    public var neutral30: UIKit.UIColor
+    public var neutral40: UIKit.UIColor
+    public var neutral50: UIKit.UIColor
+    public var neutral60: UIKit.UIColor
+    public var neutral70: UIKit.UIColor
+    public var neutral80: UIKit.UIColor
+    public var neutral90: UIKit.UIColor
+    public var neutral100: UIKit.UIColor
+    public var separator: UIKit.UIColor
+    public var inputBorder: UIKit.UIColor
+    public var shimmer: UIKit.UIColor
+    public var selected: UIKit.UIColor
+    public var highlightFoundation: UIKit.UIColor
+    public var highlightOnFoundation: UIKit.UIColor
+    public var highlightPrimary: UIKit.UIColor
+    public var highlightOnPrimary: UIKit.UIColor
+  }
+}
+@_hasMissingDesignatedInitializers public class BackbaseUI {
+  public static var shared: BackbaseMDS.BackbaseUI
+  public var colors: BackbaseMDS.BackbaseUI.Color
+  public var fonts: BackbaseMDS.BackbaseUI.Font
+  public var spacers: BackbaseMDS.BackbaseUI.Spacer
+  public var sizers: BackbaseMDS.BackbaseUI.Sizer
+  public var radiuses: BackbaseMDS.BackbaseUI.Radius
+  public var shadows: BackbaseMDS.BackbaseUI.Shadows
+  @objc deinit
+}
+extension BackbaseMDS.BackbaseUI {
+  public struct Sizer {
+    public var xxs: CoreFoundation.CGFloat
+    public var xs: CoreFoundation.CGFloat
+    public var sm: CoreFoundation.CGFloat
+    public var md: CoreFoundation.CGFloat
+    public var lg: CoreFoundation.CGFloat
+    public var xl: CoreFoundation.CGFloat
+  }
+}

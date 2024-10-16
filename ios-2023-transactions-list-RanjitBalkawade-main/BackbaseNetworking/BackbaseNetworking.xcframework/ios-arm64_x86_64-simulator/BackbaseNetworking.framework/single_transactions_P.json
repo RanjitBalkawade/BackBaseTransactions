@@ -1,0 +1,53 @@
+[
+    {
+        "id": "ec9ec6fd-a99c-4cee-a73e-51f84b11c372",
+        "description": "www.medimarket.com",
+        "originalDescription": "ONLINE PAYMENT - THANK YOU",
+        "typeGroup": "Payment",
+        "type": "Card Payment",
+        "category": "Shopping",
+        "transactionAmountCurrency": {
+            "amount": "320.95",
+            "currencyCode": "EUR"
+        },
+        "creditDebitIndicator": "DBIT",
+        "counterPartyName": "MediaMarkt",
+        "counterPartyAccountNumber": "NL91ABNA0541164300",
+        "counterPartyCity": "Amsterdam",
+        "counterPartyAddress": "ArenA Boulevard 123-125, 1101 DM",
+        "creationTime": "2019-05-25T00:00:50",
+        "state": "PENDING",
+    },
+    {
+        "id": "ec9ec6fd-a99c-4cee-a73e-51f84b11c3731214",
+        "description": "Internet Banking",
+        "typeGroup": "Payment",
+        "type": "International Payment",
+        "category": "Transfers",
+        "transactionAmountCurrency": {
+            "amount": "887.31",
+            "currencyCode": "EUR"
+        },
+        "creditDebitIndicator": "CRDT",
+        "creationTime": "2019-05-15T23:59:59",
+        "state": "PENDING"
+    },
+    {
+        "id": "ec9ec6fd-a99c-4cee-a73e-51f84b11c373c342",
+        "description": "Internet Banking",
+        "typeGroup": "Payment",
+        "type": "SEPA Payment",
+        "category": "Income",
+        "transactionAmountCurrency": {
+            "amount": "1919.95",
+            "currencyCode": "EUR"
+        },
+        "creditDebitIndicator": "CRDT",
+        "counterPartyName": "Backbase B.V",
+        "counterPartyAccountNumber": "NL40ABNA0541164350",
+        "counterPartyCity": "Amsterdam",
+        "counterPartyAddress": "Jacob Bontiusplaats 9, 1018 LL",
+        "creationTime": "2019-05-22T00:00:01",
+        "state": "PENDING"
+    }
+]

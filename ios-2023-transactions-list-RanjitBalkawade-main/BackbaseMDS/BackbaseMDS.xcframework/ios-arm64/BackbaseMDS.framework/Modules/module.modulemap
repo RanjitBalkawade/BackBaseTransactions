@@ -1,0 +1,11 @@
+framework module BackbaseMDS {
+  umbrella header "BackbaseMDS.h"
+
+  export *
+  module * { export * }
+}
+
+module BackbaseMDS.Swift {
+  header "BackbaseMDS-Swift.h"
+  requires objc
+}

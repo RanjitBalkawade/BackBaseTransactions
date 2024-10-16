@@ -1,0 +1,62 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.7.2 (swiftlang-5.7.2.135.5 clang-1400.0.29.51)
+// swift-module-flags: -target arm64-apple-ios15.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name BackbaseNetworking
+// swift-module-flags-ignorable: -enable-bare-slash-regex
+@_exported import BackbaseNetworking
+import Combine
+import Foundation
+import Swift
+import _Concurrency
+import _StringProcessing
+@_hasMissingDesignatedInitializers public class TransactionsAPI {
+  convenience public init(networkBandwidth: BackbaseNetworking.NetworkBandwidth = .high)
+  public func getTransactions(userId: Swift.Int) -> Combine.AnyPublisher<Foundation.Data, BackbaseNetworking.BackbaseAPIError>
+  @objc deinit
+}
+public enum NetworkBandwidth {
+  case high
+  case medium
+  case low
+  public static func == (a: BackbaseNetworking.NetworkBandwidth, b: BackbaseNetworking.NetworkBandwidth) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public protocol TransactionsOutput {
+  func numberOfSections() -> Swift.Int
+  func numberOfItemsInSection(_ section: Swift.Int) -> Swift.Int
+}
+public struct TransactionsOutputResult {
+  public let result: [Swift.String]?
+  public let success: Swift.Bool
+}
+@_hasMissingDesignatedInitializers public class TransactionsOutputTests {
+  convenience public init(output: BackbaseNetworking.TransactionsOutput)
+  public func testUser(_ userId: Swift.Int)
+  public var testUserPublisher: Combine.AnyPublisher<BackbaseNetworking.TransactionsOutputResult, Swift.Never> {
+    get
+  }
+  @objc deinit
+}
+public enum BackbaseAPIError : Swift.Error {
+  case offline
+  case noResource
+  case serverError
+  case invalidUser
+  case unknown
+  public static func == (a: BackbaseNetworking.BackbaseAPIError, b: BackbaseNetworking.BackbaseAPIError) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension BackbaseNetworking.BackbaseAPIError : Foundation.LocalizedError {
+  public var errorDescription: Swift.String? {
+    get
+  }
+}
+extension BackbaseNetworking.NetworkBandwidth : Swift.Equatable {}
+extension BackbaseNetworking.NetworkBandwidth : Swift.Hashable {}
+extension BackbaseNetworking.BackbaseAPIError : Swift.Equatable {}
+extension BackbaseNetworking.BackbaseAPIError : Swift.Hashable {}

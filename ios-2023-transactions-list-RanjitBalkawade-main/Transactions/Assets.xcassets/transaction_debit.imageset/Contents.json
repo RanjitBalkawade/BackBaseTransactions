@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "debit.pdf",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

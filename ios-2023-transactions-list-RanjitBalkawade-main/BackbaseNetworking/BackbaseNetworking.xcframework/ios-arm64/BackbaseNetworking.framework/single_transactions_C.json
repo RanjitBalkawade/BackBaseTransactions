@@ -1,0 +1,93 @@
+[
+    {
+        "id": "ec9ec6fd-a99c-4cee-a73e-51f84b11c371",
+        "description": "www.starbucks.com",
+        "originalDescription": "STARBUCKS 65000000764AMSTERDAM",
+        "typeGroup": "Payment",
+        "type": "Card Payment",
+        "category": "Food Drinks",
+        "transactionAmountCurrency": {
+            "amount": "7.5",
+            "currencyCode": "EUR"
+        },
+        "creditDebitIndicator": "DBIT",
+        "counterPartyName": "Starbucks",
+        "counterPartyAccountNumber": "NL91ABNA0423164312",
+        "counterPartyCity": "Amsterdam",
+        "counterPartyAddress": "Zuidplein 10, 1077 XV",
+        "creationTime": "2019-05-29T01:20:50",
+        "state": "COMPLETED"
+    },
+    {
+        "id": "ec9ec6fd-a99c-4cee-a73e-51f84b11c376",
+        "description": "Standing Order",
+        "typeGroup": "Payment",
+        "type": "SEPA Payment",
+        "category": "Other Income",
+        "transactionAmountCurrency": {
+            "amount": "5200",
+            "currencyCode": "EUR"
+        },
+        "creditDebitIndicator": "CRDT",
+        "counterPartyName": "Simons & Co. B.V.",
+        "counterPartyAccountNumber": "HR1210010051863000160",
+        "counterPartyCity": "Utrecht",
+        "counterPartyAddress": "Vendelier 71. 3905PD",
+        "creationTime": "2019-04-15T08:13:40",
+        "state": "COMPLETED"
+    },
+    {
+        "id": "ec9ec6fd-a99c-4cee-a73e-51f84b11c373",
+        "description": "albertheijn.nl",
+        "originalDescription": "ALBERTH#239",
+        "typeGroup": "Payment",
+        "type": "Card Payment",
+        "category": "Shopping",
+        "transactionAmountCurrency": {
+            "amount": "919.95",
+            "currencyCode": "EUR"
+        },
+        "creditDebitIndicator": "DBIT",
+        "counterPartyName": "Albert Heijn",
+        "counterPartyAccountNumber": "BE68539007547034",
+        "counterPartyCity": "Amsterdam",
+        "counterPartyAddress": "Prins Hendrikkade 20, 1012 TL",
+        "creationTime": "2019-05-20T11:20:50",
+        "state": "COMPLETED"
+    },
+    {
+        "id": "ec9ec6fd-a99c-4cee-a73e-51f84b11c375",
+        "description": "albertheijn.nl",
+        "originalDescription": "ALBERTHEIJN",
+        "typeGroup": "Payment",
+        "type": "Card Payment",
+        "category": "Shopping",
+        "transactionAmountCurrency": {
+            "amount": "86.54",
+            "currencyCode": "EUR"
+        },
+        "creditDebitIndicator": "DBIT",
+        "counterPartyName": "Albert Heijn",
+        "counterPartyAccountNumber": "BG80BNBG96611020345678",
+        "counterPartyCity": "Amsterdam",
+        "counterPartyAddress": "Jacob Bontiusplaats 9, 1018 LL",
+        "creationTime": "2019-04-24T09:00:10",
+        "state": "COMPLETED"
+    },
+    {
+        "id": "ec9ec6fd-a99c-4cee-a73e-51f84b11c374",
+        "description": "Internet Banking",
+        "typeGroup": "Payment",
+        "type": "SEPA Payment",
+        "category": "Shopping",
+        "transactionAmountCurrency": {
+            "amount": "111.95",
+            "currencyCode": "EUR"
+        },
+        "creditDebitIndicator": "DBIT",
+        "counterPartyName": "Eneco Bank11",
+        "counterPartyAccountNumber": "BA391290079401028494",
+        "creationTime": "2019-04-28T00:00:00",
+        "state": "COMPLETED"
+    }
+]
