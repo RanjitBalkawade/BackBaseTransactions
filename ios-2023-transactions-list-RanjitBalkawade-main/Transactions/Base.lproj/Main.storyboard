@@ -22,18 +22,26 @@
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </tableView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="p1z-aV-jBS">
+                                <rect key="frame" x="0.0" y="103" width="393" height="715"/>
+                            </activityIndicatorView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="p1z-aV-jBS" secondAttribute="trailing" id="2wM-x3-f6J"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="lbc-E2-MEn" secondAttribute="trailing" id="4vp-Ki-w4f"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="p1z-aV-jBS" secondAttribute="bottom" id="Hc9-rf-Tro"/>
                             <constraint firstItem="lbc-E2-MEn" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="cCc-ww-GEF"/>
+                            <constraint firstItem="p1z-aV-jBS" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="nIR-sP-x52"/>
                             <constraint firstAttribute="bottom" secondItem="lbc-E2-MEn" secondAttribute="bottom" id="qiA-Op-q2J"/>
                             <constraint firstItem="lbc-E2-MEn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="wPh-XC-90F"/>
+                            <constraint firstItem="p1z-aV-jBS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="xzy-yR-2t3"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="OE9-RY-9NU"/>
                     <connections>
+                        <outlet property="activityIndicatorView" destination="p1z-aV-jBS" id="Hmm-43-ITW"/>
                         <outlet property="tableView" destination="lbc-E2-MEn" id="7Ab-ye-Gj2"/>
                     </connections>
                 </viewController>

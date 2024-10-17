@@ -8,14 +8,17 @@
 import UIKit
 import BackbaseMDS
 
+/// Custom `UITableViewCell` subclass representing a transaction cell in the transaction list.
 class TransactionCell: UITableViewCell {
     
-    //MARK: - Internal properties
+    // MARK: - Internal properties
     
+    /// The reuse identifier used for dequeuing cells of this type.
     static let reuseIdentifier = "TransactionCell"
     
-    //MARK: - Private properties
+    // MARK: - Private properties
     
+    /// A container view that holds the main cell content with styling such as shadow and rounded corners.
     private let containerView: UIView = {
         let view = UIView()
         let shadow = BackbaseUI.shared.shadows.small
@@ -30,6 +33,7 @@ class TransactionCell: UITableViewCell {
         return view
     }()
     
+    /// A vertical stack view that contains the heading stack, description, and amount information.
     private let mainStackView: UIStackView = {
         let stackView = UIStackView()
         stackView.axis = .vertical
@@ -39,6 +43,7 @@ class TransactionCell: UITableViewCell {
         return stackView
     }()
     
+    /// A horizontal stack view containing the icon, transaction count, and date labels.
     private let headingStackView: UIStackView = {
         let stackView = UIStackView()
         stackView.axis = .horizontal
@@ -48,6 +53,7 @@ class TransactionCell: UITableViewCell {
         return stackView
     }()
     
+    /// Image view for displaying the transaction icon (credit or debit).
     private let iconImageView: UIImageView = {
         let imageView = UIImageView()
         imageView.contentMode = .scaleAspectFit
@@ -55,6 +61,7 @@ class TransactionCell: UITableViewCell {
         return imageView
     }()
     
+    /// Label displaying the number of transactions in the group.
     private let transactionCountLabel: UILabel = {
         let label = UILabel()
         label.textColor = BackbaseUI.shared.colors.textDefault
@@ -63,6 +70,7 @@ class TransactionCell: UITableViewCell {
         return label
     }()
     
+    /// Label displaying the transaction date.
     private let dateLabel: UILabel = {
         let label = UILabel()
         label.textColor = BackbaseUI.shared.colors.textDefault
@@ -72,6 +80,7 @@ class TransactionCell: UITableViewCell {
         return label
     }()
     
+    /// Label displaying the transaction description.
     private let descriptionLabel: UILabel = {
         let label = UILabel()
         label.numberOfLines = 0
@@ -81,6 +90,7 @@ class TransactionCell: UITableViewCell {
         return label
     }()
     
+    /// A separator view to visually separate the description and amount sections.
     private let separatorView: UIView = {
         let view = UIView()
         view.backgroundColor = BackbaseUI.shared.colors.separator
@@ -88,6 +98,7 @@ class TransactionCell: UITableViewCell {
         return view
     }()
     
+    /// Label displaying the transaction amount.
     private let amountLabel: UILabel = {
         let label = UILabel()
         label.textAlignment = .right
@@ -99,11 +110,13 @@ class TransactionCell: UITableViewCell {
     
     // MARK: - Initializers
     
+    /// Initializes the cell with the provided style and reuse identifier.
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         setupViews()
     }
     
+    /// Initializes the cell from a storyboard or xib file.
     required init?(coder: NSCoder) {
         super.init(coder: coder)
         setupViews()
@@ -111,6 +124,7 @@ class TransactionCell: UITableViewCell {
     
     // MARK: - Life cycle methods
     
+    /// Prepares the cell for reuse by resetting its content.
     override func prepareForReuse() {
         super.prepareForReuse()
         transactionCountLabel.text = nil
@@ -119,8 +133,10 @@ class TransactionCell: UITableViewCell {
         amountLabel.text = nil
     }
     
-    //MARK: - Internal methods
+    // MARK: - Internal methods
     
+    /// Configures the cell with the provided `TransactionCellViewModel`.
+    /// - Parameter viewModel: The view model containing the transaction data to display.
     func configure(with viewModel: TransactionCellViewModel) {
         iconImageView.image = viewModel.icon
         iconImageView.tintColor = BackbaseUI.shared.colors.primary
@@ -131,8 +147,9 @@ class TransactionCell: UITableViewCell {
         amountLabel.textColor = viewModel.amountColor
     }
     
-    //MARK: - Private methods
+    // MARK: - Private methods
     
+    /// Sets up the views and their constraints for the cell.
     private func setupViews() {
         backgroundColor = .clear
         

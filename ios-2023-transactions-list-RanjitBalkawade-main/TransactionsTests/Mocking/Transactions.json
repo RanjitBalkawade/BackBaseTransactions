@@ -1,0 +1,57 @@
+[
+    {
+        "id": "1",
+        "description": "Test1",
+        "state": "PENDING",
+        "creditDebitIndicator": "CRDT",
+        "creationTime": "2019-05-15T14:28:01",
+        "transactionAmountCurrency": {
+            "amount": "1919.95",
+            "currencyCode": "EUR"
+        }
+    },
+    {
+        "id": "2",
+        "description": "Test2",
+        "state": "COMPLETED",
+        "creditDebitIndicator": "CRDT",
+        "creationTime": "2019-05-15T14:28:01",
+        "transactionAmountCurrency": {
+            "amount": "1919.95",
+            "currencyCode": "EUR"
+        }
+    },
+    {
+        "id": "3",
+        "description": "Test3",
+        "state": "COMPLETED",
+        "creditDebitIndicator": "CRDT",
+        "creationTime": "2019-05-15T14:28:01",
+        "transactionAmountCurrency": {
+            "amount": "1919.95",
+            "currencyCode": "EUR"
+        }
+    },
+    {
+        "id": "4",
+        "description": "Test4",
+        "state": "COMPLETED",
+        "creditDebitIndicator": "CRDT",
+        "creationTime": "2019-05-16T14:28:01",
+        "transactionAmountCurrency": {
+            "amount": "1919.95",
+            "currencyCode": "EUR"
+        }
+    },
+    {
+        "id": "5",
+        "description": "Test5",
+        "state": "COMPLETED",
+        "creditDebitIndicator": "DBIT",
+        "creationTime": "2019-05-16T14:28:01",
+        "transactionAmountCurrency": {
+            "amount": "1919.95",
+            "currencyCode": "EUR"
+        }
+    }
+]

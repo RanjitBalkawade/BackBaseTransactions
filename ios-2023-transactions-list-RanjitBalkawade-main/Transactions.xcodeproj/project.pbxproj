@@ -76,6 +76,7 @@
 		CD88E0FF2CC17FE0001261FE /* Extensions */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Extensions; sourceTree = "<group>"; };
 		CD88E1002CC1803F001261FE /* Tests */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Tests; sourceTree = "<group>"; };
 		CD88E1012CC1805B001261FE /* Mocking */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Mocking; sourceTree = "<group>"; };
+		CD88E1202CC1AB98001261FE /* Mocking */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Mocking; sourceTree = "<group>"; };
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +134,7 @@
 				CD88E0FD2CC17F5F001261FE /* TransactionsList */,
 				CD88E0FF2CC17FE0001261FE /* Extensions */,
 				CD88E0FE2CC17F8B001261FE /* Model */,
+				CD88E1202CC1AB98001261FE /* Mocking */,
 				28257F6A295DC3AF008A886B /* AppDelegate.swift */,
 				28257F6C295DC3AF008A886B /* SceneDelegate.swift */,
 				28257F70295DC3AF008A886B /* Main.storyboard */,
@@ -190,6 +192,7 @@
 				CD88E0FD2CC17F5F001261FE /* TransactionsList */,
 				CD88E0FE2CC17F8B001261FE /* Model */,
 				CD88E0FF2CC17FE0001261FE /* Extensions */,
+				CD88E1202CC1AB98001261FE /* Mocking */,
 			);
 			name = Transactions;
 			productName = Transactions;

@@ -5,8 +5,11 @@
 //  Created by Ranjeet Balkawade on 14/10/2024.
 //
 
+import Foundation
+
 // MARK: - Transaction
 
+/// Represents a transaction, which includes details such as the ID, description, state, transaction amount, etc.
 struct Transaction: Codable {
     let id: String
     let description: String
@@ -53,3 +56,16 @@ struct TransactionAmountCurrency: Codable {
     }
 }
 
+// MARK: - TransactionState
+
+enum TransactionState: String, Codable {
+    case pending = "PENDING"
+    case completed = "COMPLETED"
+}
+
+// MARK: - CreditDebitIndicator
+
+enum CreditDebitIndicator: String, Codable {
+    case credit = "CRDT"
+    case debit = "DBIT"
+}

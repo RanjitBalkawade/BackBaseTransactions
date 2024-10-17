@@ -77,5 +77,3 @@ final class TransactionCellViewModelTests: XCTestCase {
         XCTAssertEqual(viewModel.amount, expectedAmount, "Amount should be correctly formatted with the annotation and sum.")
     }
 }
-
-

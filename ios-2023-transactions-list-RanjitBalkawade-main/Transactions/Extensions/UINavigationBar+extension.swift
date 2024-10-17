@@ -9,6 +9,8 @@ import UIKit
 import BackbaseMDS
 
 extension UINavigationBar {
+    
+    /// Updates the appearance of the navigation bar based on the app's theme.
     static func updateApparanceWithTheme() {
         let navigationBarAppearance = UINavigationBarAppearance()
         navigationBarAppearance.configureWithOpaqueBackground()

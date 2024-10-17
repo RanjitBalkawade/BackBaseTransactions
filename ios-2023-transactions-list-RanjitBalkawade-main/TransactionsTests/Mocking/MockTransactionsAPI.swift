@@ -10,7 +10,7 @@ import Combine
 import BackbaseNetworking
 @testable import Transactions
 
-// Mock version of the TransactionsAPI class
+/// Mock version of the TransactionsAPI class
 class MockTransactionsAPI: TransactionsAPIProtocol {
     
     var result: Result<Data, BackbaseAPIError>?

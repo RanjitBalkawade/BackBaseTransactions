@@ -131,7 +131,7 @@ final class TransactionsListViewModelTests: XCTestCase {
             switch result {
                 case .success:
                     XCTAssertEqual(self.viewModel.numberOfItems(inSection: 0), 1, "Expected 1 item in the first section.")
-                    XCTAssertEqual(self.viewModel.numberOfItems(inSection: 1), 1, "Expected 1 item in the second section.")
+                    XCTAssertEqual(self.viewModel.numberOfItems(inSection: 1), 3, "Expected 3 item in the second section.")
                     expectation.fulfill()
                 case .failure(let error):
                     XCTFail("Expected success, but got error: \(error)")
@@ -149,9 +149,23 @@ final class TransactionsListViewModelTests: XCTestCase {
         viewModel.fetchTransactions { result in
             switch result {
                 case .success:
-                    let indexPath = IndexPath(row: 0, section: 0)
-                    let cellViewModel = self.viewModel.transactionCellViewModel(forIndexPath: indexPath)
-                    XCTAssertEqual(cellViewModel.description, "Test", "Expected the transaction description to be 'Test'.")
+                    let indexPath1 = IndexPath(row: 0, section: 0)
+                    let cellViewModel1 = self.viewModel.transactionCellViewModel(forIndexPath: indexPath1)
+                    XCTAssertEqual(cellViewModel1.description, "Test1", "Expected the description to be 'Test1'")
+                    
+                    let indexPath2 = IndexPath(row: 0, section: 1)
+                    let cellViewModel2 = self.viewModel.transactionCellViewModel(forIndexPath: indexPath2)
+                    XCTAssertEqual(cellViewModel2.description, "Test4", "Expected the description to be 'Test4'")
+                    
+                    let indexPath3 = IndexPath(row: 1, section: 1)
+                    let cellViewModel3 = self.viewModel.transactionCellViewModel(forIndexPath: indexPath3)
+                    XCTAssertEqual(cellViewModel3.description, "Test5", "Expected the description to be 'Test5'")
+                    XCTAssertEqual(cellViewModel3.transactionCount, "1 Debit", "Expected the description to be '1 Debit'")
+                    
+                    let indexPath4 = IndexPath(row: 2, section: 1)
+                    let cellViewModel4 = self.viewModel.transactionCellViewModel(forIndexPath: indexPath4)
+                    XCTAssertEqual(cellViewModel4.description, "Test2\nTest3", "Expected the description to be 'Test2\nTest3'")
+                    
                     expectation.fulfill()
                 case .failure(let error):
                     XCTFail("Expected success, but got error: \(error)")
