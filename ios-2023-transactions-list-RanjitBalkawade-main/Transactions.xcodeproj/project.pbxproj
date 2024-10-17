@@ -21,6 +21,9 @@
 		28C17E2D29DDADF3006162F9 /* BackbaseMDS.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28C17E2C29DDADF2006162F9 /* BackbaseMDS.xcframework */; };
 		28C17E2E29DDADF3006162F9 /* BackbaseMDS.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 28C17E2C29DDADF2006162F9 /* BackbaseMDS.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		28ED80B6295DDDE300AB525C /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 28ED80B5295DDDE300AB525C /* README.md */; };
+		CD88E0DE2CC0E5C0001261FE /* TransactionsTableSectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD88E0DD2CC0E5C0001261FE /* TransactionsTableSectionHeaderView.swift */; };
+		CD88E0E02CC0E613001261FE /* TransactionsListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD88E0DF2CC0E613001261FE /* TransactionsListViewModel.swift */; };
+		CD88E0E22CC0E65B001261FE /* TransactionCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD88E0E12CC0E65B001261FE /* TransactionCellViewModel.swift */; };
 		CDC7AF262CBD61780022C4A4 /* TransactionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC7AF252CBD61780022C4A4 /* TransactionCell.swift */; };
 		CDC7AF2A2CBD947A0022C4A4 /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC7AF292CBD947A0022C4A4 /* Transaction.swift */; };
 /* End PBXBuildFile section */
@@ -74,6 +77,9 @@
 		28257F8D295DC3B0008A886B /* TransactionsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		28C17E2C29DDADF2006162F9 /* BackbaseMDS.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = BackbaseMDS.xcframework; path = BackbaseMDS/BackbaseMDS.xcframework; sourceTree = "<group>"; };
 		28ED80B5295DDDE300AB525C /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		CD88E0DD2CC0E5C0001261FE /* TransactionsTableSectionHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsTableSectionHeaderView.swift; sourceTree = "<group>"; };
+		CD88E0DF2CC0E613001261FE /* TransactionsListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsListViewModel.swift; sourceTree = "<group>"; };
+		CD88E0E12CC0E65B001261FE /* TransactionCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionCellViewModel.swift; sourceTree = "<group>"; };
 		CDC7AF252CBD61780022C4A4 /* TransactionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionCell.swift; sourceTree = "<group>"; };
 		CDC7AF292CBD947A0022C4A4 /* Transaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -139,6 +145,9 @@
 				28257F78295DC3B0008A886B /* Info.plist */,
 				CDC7AF252CBD61780022C4A4 /* TransactionCell.swift */,
 				CDC7AF292CBD947A0022C4A4 /* Transaction.swift */,
+				CD88E0DD2CC0E5C0001261FE /* TransactionsTableSectionHeaderView.swift */,
+				CD88E0DF2CC0E613001261FE /* TransactionsListViewModel.swift */,
+				CD88E0E12CC0E65B001261FE /* TransactionCellViewModel.swift */,
 			);
 			path = Transactions;
 			sourceTree = "<group>";
@@ -303,8 +312,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				28257F6F295DC3AF008A886B /* TransactionsListViewController.swift in Sources */,
+				CD88E0E02CC0E613001261FE /* TransactionsListViewModel.swift in Sources */,
 				28257F6B295DC3AF008A886B /* AppDelegate.swift in Sources */,
+				CD88E0E22CC0E65B001261FE /* TransactionCellViewModel.swift in Sources */,
 				CDC7AF262CBD61780022C4A4 /* TransactionCell.swift in Sources */,
+				CD88E0DE2CC0E5C0001261FE /* TransactionsTableSectionHeaderView.swift in Sources */,
 				28257F6D295DC3AF008A886B /* SceneDelegate.swift in Sources */,
 				CDC7AF2A2CBD947A0022C4A4 /* Transaction.swift in Sources */,
 			);

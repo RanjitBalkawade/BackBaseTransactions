@@ -22,12 +22,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         UINavigationBar.appearance().compactAppearance = navigationBarAppearance
         UINavigationBar.appearance().scrollEdgeAppearance = navigationBarAppearance
         
-//        let appearance = UINavigationBarAppearance()
-//        appearance.configureWithOpaqueBackground()
-//        appearance.backgroundColor = BackbaseUI.shared.colors.primary
-//        appearance.titleTextAttributes = [NSAttributedString.Key.foregroundColor: BackbaseUI.shared.colors.onPrimary]
-//        self.navigationItem.scrollEdgeAppearance = appearance
-        
         return true
     }
 

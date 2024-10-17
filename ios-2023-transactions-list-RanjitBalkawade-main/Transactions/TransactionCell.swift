@@ -8,6 +8,9 @@
 import UIKit
 import BackbaseMDS
 
+import UIKit
+import BackbaseMDS
+
 class TransactionCell: UITableViewCell {
     
     static let reuseIdentifier = "TransactionCell"
@@ -47,7 +50,7 @@ class TransactionCell: UITableViewCell {
         let imageView = UIImageView()
         imageView.image = UIImage(named: "transaction_debit")?.withRenderingMode(.alwaysTemplate)
         imageView.contentMode = .scaleAspectFit
-        imageView.tintColor = BackbaseUI.shared.colors.primary
+        imageView.tintColor = .red //BackbaseUI.shared.colors.primary
         imageView.translatesAutoresizingMaskIntoConstraints = false
         return imageView
     }()
@@ -57,7 +60,7 @@ class TransactionCell: UITableViewCell {
         label.textColor = BackbaseUI.shared.colors.textDefault
         label.font = BackbaseUI.shared.fonts.preferredFont(.footnote, .semibold)
         label.translatesAutoresizingMaskIntoConstraints = false
-
+        
         return label
     }()
     
@@ -147,46 +150,21 @@ class TransactionCell: UITableViewCell {
         mainStackView.addArrangedSubview(amountLabel)
     }
     
-    func configure(with transaction: Transaction) {
-        transactionCountLabel.text = "adfsf"
-        dateLabel.text = "dfff"
-        descriptionLabel.attributedText = NSMutableAttributedString(string: "Red\nPink\nBlue")
-        amountLabel.text = "sdsdd"
-    }
-}
-
-
-class CustomTableSectionHeaderView: UIView {
-    
-    let titleLabel: UILabel = {
-        let label = UILabel()
-        label.textColor = BackbaseUI.shared.colors.textDefault
-        label.font = BackbaseUI.shared.fonts.preferredFont(.title2, .semibold)
-        label.translatesAutoresizingMaskIntoConstraints = false
-        return label
-    }()
-    
-    override init(frame: CGRect) {
-        super.init(frame: frame)
-        backgroundColor = UIColor.clear
-        addSubview(titleLabel)
-        setupConstraints()
-    }
-
-    required init?(coder: NSCoder) {
-        super.init(coder: coder)
+    func configure(with viewModel: TransactionCellViewModel) {
+        iconImageView.image = viewModel.icon
+        iconImageView.tintColor = BackbaseUI.shared.colors.primary
+        transactionCountLabel.text = viewModel.transactionCount
+        dateLabel.text = viewModel.date
+        descriptionLabel.attributedText = NSMutableAttributedString(string: viewModel.description)
+        amountLabel.text = viewModel.amount
+        amountLabel.textColor = viewModel.amountColor
     }
     
-    private func setupConstraints() {
-
-        NSLayoutConstraint.activate([
-            titleLabel.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 8),
-            titleLabel.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -16),
-            titleLabel.centerYAnchor.constraint(equalTo: centerYAnchor)
-        ])
-    }
-    
-    func configure(title: String) {
-        titleLabel.text = title
+    override func prepareForReuse() {
+        super.prepareForReuse()
+        transactionCountLabel.text = nil
+        dateLabel.text = nil
+        descriptionLabel.attributedText = nil
+        amountLabel.text = nil
     }
 }
