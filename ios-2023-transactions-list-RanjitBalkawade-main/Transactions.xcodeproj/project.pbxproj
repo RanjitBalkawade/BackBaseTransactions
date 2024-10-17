@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 70;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -11,28 +11,14 @@
 		2817D60629C4C54C001D8307 /* BackbaseNetworking.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2817D60429C4C54C001D8307 /* BackbaseNetworking.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		28257F6B295DC3AF008A886B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28257F6A295DC3AF008A886B /* AppDelegate.swift */; };
 		28257F6D295DC3AF008A886B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28257F6C295DC3AF008A886B /* SceneDelegate.swift */; };
-		28257F6F295DC3AF008A886B /* TransactionsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28257F6E295DC3AF008A886B /* TransactionsListViewController.swift */; };
 		28257F72295DC3AF008A886B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28257F70295DC3AF008A886B /* Main.storyboard */; };
 		28257F74295DC3B0008A886B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28257F73295DC3B0008A886B /* Assets.xcassets */; };
 		28257F77295DC3B0008A886B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28257F75295DC3B0008A886B /* LaunchScreen.storyboard */; };
-		28257F82295DC3B0008A886B /* TransactionsListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28257F81295DC3B0008A886B /* TransactionsListViewModelTests.swift */; };
 		28257F8C295DC3B0008A886B /* TransactionsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28257F8B295DC3B0008A886B /* TransactionsUITests.swift */; };
 		28257F8E295DC3B0008A886B /* TransactionsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28257F8D295DC3B0008A886B /* TransactionsUITestsLaunchTests.swift */; };
 		28C17E2D29DDADF3006162F9 /* BackbaseMDS.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28C17E2C29DDADF2006162F9 /* BackbaseMDS.xcframework */; };
 		28C17E2E29DDADF3006162F9 /* BackbaseMDS.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 28C17E2C29DDADF2006162F9 /* BackbaseMDS.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		28ED80B6295DDDE300AB525C /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 28ED80B5295DDDE300AB525C /* README.md */; };
-		CD88E0DE2CC0E5C0001261FE /* TransactionsTableSectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD88E0DD2CC0E5C0001261FE /* TransactionsTableSectionHeaderView.swift */; };
-		CD88E0E02CC0E613001261FE /* TransactionsListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD88E0DF2CC0E613001261FE /* TransactionsListViewModel.swift */; };
-		CD88E0E22CC0E65B001261FE /* TransactionCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD88E0E12CC0E65B001261FE /* TransactionCellViewModel.swift */; };
-		CD88E0EC2CC14ECF001261FE /* Transaction+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD88E0EB2CC14ECF001261FE /* Transaction+extension.swift */; };
-		CD88E0EE2CC14F2C001261FE /* Date+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD88E0ED2CC14F2C001261FE /* Date+extension.swift */; };
-		CD88E0F02CC14F4E001261FE /* UINavigationBar+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD88E0EF2CC14F4E001261FE /* UINavigationBar+extension.swift */; };
-		CD88E0F62CC17E41001261FE /* TransactionCellViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD88E0F52CC17E41001261FE /* TransactionCellViewModelTests.swift */; };
-		CD88E0F82CC17E5C001261FE /* MockTransactionsAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD88E0F72CC17E5C001261FE /* MockTransactionsAPI.swift */; };
-		CD88E0FA2CC17E78001261FE /* DateExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD88E0F92CC17E78001261FE /* DateExtensionTests.swift */; };
-		CD88E0FC2CC17EA1001261FE /* MockHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD88E0FB2CC17EA1001261FE /* MockHelper.swift */; };
-		CDC7AF262CBD61780022C4A4 /* TransactionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC7AF252CBD61780022C4A4 /* TransactionCell.swift */; };
-		CDC7AF2A2CBD947A0022C4A4 /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC7AF292CBD947A0022C4A4 /* Transaction.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,31 +58,25 @@
 		28257F67295DC3AF008A886B /* Transactions.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Transactions.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		28257F6A295DC3AF008A886B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		28257F6C295DC3AF008A886B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		28257F6E295DC3AF008A886B /* TransactionsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsListViewController.swift; sourceTree = "<group>"; };
 		28257F71295DC3AF008A886B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		28257F73295DC3B0008A886B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		28257F76295DC3B0008A886B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		28257F78295DC3B0008A886B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		28257F7D295DC3B0008A886B /* TransactionsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TransactionsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		28257F81295DC3B0008A886B /* TransactionsListViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsListViewModelTests.swift; sourceTree = "<group>"; };
 		28257F87295DC3B0008A886B /* TransactionsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TransactionsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		28257F8B295DC3B0008A886B /* TransactionsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsUITests.swift; sourceTree = "<group>"; };
 		28257F8D295DC3B0008A886B /* TransactionsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		28C17E2C29DDADF2006162F9 /* BackbaseMDS.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = BackbaseMDS.xcframework; path = BackbaseMDS/BackbaseMDS.xcframework; sourceTree = "<group>"; };
 		28ED80B5295DDDE300AB525C /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		CD88E0DD2CC0E5C0001261FE /* TransactionsTableSectionHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsTableSectionHeaderView.swift; sourceTree = "<group>"; };
-		CD88E0DF2CC0E613001261FE /* TransactionsListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsListViewModel.swift; sourceTree = "<group>"; };
-		CD88E0E12CC0E65B001261FE /* TransactionCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionCellViewModel.swift; sourceTree = "<group>"; };
-		CD88E0EB2CC14ECF001261FE /* Transaction+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Transaction+extension.swift"; sourceTree = "<group>"; };
-		CD88E0ED2CC14F2C001261FE /* Date+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+extension.swift"; sourceTree = "<group>"; };
-		CD88E0EF2CC14F4E001261FE /* UINavigationBar+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigationBar+extension.swift"; sourceTree = "<group>"; };
-		CD88E0F52CC17E41001261FE /* TransactionCellViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionCellViewModelTests.swift; sourceTree = "<group>"; };
-		CD88E0F72CC17E5C001261FE /* MockTransactionsAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockTransactionsAPI.swift; sourceTree = "<group>"; };
-		CD88E0F92CC17E78001261FE /* DateExtensionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtensionTests.swift; sourceTree = "<group>"; };
-		CD88E0FB2CC17EA1001261FE /* MockHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockHelper.swift; sourceTree = "<group>"; };
-		CDC7AF252CBD61780022C4A4 /* TransactionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionCell.swift; sourceTree = "<group>"; };
-		CDC7AF292CBD947A0022C4A4 /* Transaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		CD88E0FD2CC17F5F001261FE /* TransactionsList */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = TransactionsList; sourceTree = "<group>"; };
+		CD88E0FE2CC17F8B001261FE /* Model */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Model; sourceTree = "<group>"; };
+		CD88E0FF2CC17FE0001261FE /* Extensions */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Extensions; sourceTree = "<group>"; };
+		CD88E1002CC1803F001261FE /* Tests */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Tests; sourceTree = "<group>"; };
+		CD88E1012CC1805B001261FE /* Mocking */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Mocking; sourceTree = "<group>"; };
+/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		28257F64295DC3AF008A886B /* Frameworks */ = {
@@ -150,21 +130,15 @@
 		28257F69295DC3AF008A886B /* Transactions */ = {
 			isa = PBXGroup;
 			children = (
+				CD88E0FD2CC17F5F001261FE /* TransactionsList */,
+				CD88E0FF2CC17FE0001261FE /* Extensions */,
+				CD88E0FE2CC17F8B001261FE /* Model */,
 				28257F6A295DC3AF008A886B /* AppDelegate.swift */,
 				28257F6C295DC3AF008A886B /* SceneDelegate.swift */,
 				28257F70295DC3AF008A886B /* Main.storyboard */,
 				28257F73295DC3B0008A886B /* Assets.xcassets */,
 				28257F75295DC3B0008A886B /* LaunchScreen.storyboard */,
 				28257F78295DC3B0008A886B /* Info.plist */,
-				CDC7AF292CBD947A0022C4A4 /* Transaction.swift */,
-				CD88E0EB2CC14ECF001261FE /* Transaction+extension.swift */,
-				CD88E0DF2CC0E613001261FE /* TransactionsListViewModel.swift */,
-				28257F6E295DC3AF008A886B /* TransactionsListViewController.swift */,
-				CDC7AF252CBD61780022C4A4 /* TransactionCell.swift */,
-				CD88E0E12CC0E65B001261FE /* TransactionCellViewModel.swift */,
-				CD88E0DD2CC0E5C0001261FE /* TransactionsTableSectionHeaderView.swift */,
-				CD88E0ED2CC14F2C001261FE /* Date+extension.swift */,
-				CD88E0EF2CC14F4E001261FE /* UINavigationBar+extension.swift */,
 			);
 			path = Transactions;
 			sourceTree = "<group>";
@@ -172,11 +146,8 @@
 		28257F80295DC3B0008A886B /* TransactionsTests */ = {
 			isa = PBXGroup;
 			children = (
-				28257F81295DC3B0008A886B /* TransactionsListViewModelTests.swift */,
-				CD88E0F52CC17E41001261FE /* TransactionCellViewModelTests.swift */,
-				CD88E0F72CC17E5C001261FE /* MockTransactionsAPI.swift */,
-				CD88E0F92CC17E78001261FE /* DateExtensionTests.swift */,
-				CD88E0FB2CC17EA1001261FE /* MockHelper.swift */,
+				CD88E1012CC1805B001261FE /* Mocking */,
+				CD88E1002CC1803F001261FE /* Tests */,
 			);
 			path = TransactionsTests;
 			sourceTree = "<group>";
@@ -215,6 +186,11 @@
 			);
 			dependencies = (
 			);
+			fileSystemSynchronizedGroups = (
+				CD88E0FD2CC17F5F001261FE /* TransactionsList */,
+				CD88E0FE2CC17F8B001261FE /* Model */,
+				CD88E0FF2CC17FE0001261FE /* Extensions */,
+			);
 			name = Transactions;
 			productName = Transactions;
 			productReference = 28257F67295DC3AF008A886B /* Transactions.app */;
@@ -232,6 +208,10 @@
 			);
 			dependencies = (
 				28257F7F295DC3B0008A886B /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				CD88E1002CC1803F001261FE /* Tests */,
+				CD88E1012CC1805B001261FE /* Mocking */,
 			);
 			name = TransactionsTests;
 			productName = TransactionsTests;
@@ -332,17 +312,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CD88E0EC2CC14ECF001261FE /* Transaction+extension.swift in Sources */,
-				28257F6F295DC3AF008A886B /* TransactionsListViewController.swift in Sources */,
-				CD88E0E02CC0E613001261FE /* TransactionsListViewModel.swift in Sources */,
 				28257F6B295DC3AF008A886B /* AppDelegate.swift in Sources */,
-				CD88E0E22CC0E65B001261FE /* TransactionCellViewModel.swift in Sources */,
-				CDC7AF262CBD61780022C4A4 /* TransactionCell.swift in Sources */,
-				CD88E0DE2CC0E5C0001261FE /* TransactionsTableSectionHeaderView.swift in Sources */,
-				CD88E0EE2CC14F2C001261FE /* Date+extension.swift in Sources */,
 				28257F6D295DC3AF008A886B /* SceneDelegate.swift in Sources */,
-				CDC7AF2A2CBD947A0022C4A4 /* Transaction.swift in Sources */,
-				CD88E0F02CC14F4E001261FE /* UINavigationBar+extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -350,11 +321,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CD88E0FC2CC17EA1001261FE /* MockHelper.swift in Sources */,
-				28257F82295DC3B0008A886B /* TransactionsListViewModelTests.swift in Sources */,
-				CD88E0FA2CC17E78001261FE /* DateExtensionTests.swift in Sources */,
-				CD88E0F62CC17E41001261FE /* TransactionCellViewModelTests.swift in Sources */,
-				CD88E0F82CC17E5C001261FE /* MockTransactionsAPI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
