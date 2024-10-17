@@ -24,6 +24,9 @@
 		CD88E0DE2CC0E5C0001261FE /* TransactionsTableSectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD88E0DD2CC0E5C0001261FE /* TransactionsTableSectionHeaderView.swift */; };
 		CD88E0E02CC0E613001261FE /* TransactionsListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD88E0DF2CC0E613001261FE /* TransactionsListViewModel.swift */; };
 		CD88E0E22CC0E65B001261FE /* TransactionCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD88E0E12CC0E65B001261FE /* TransactionCellViewModel.swift */; };
+		CD88E0EC2CC14ECF001261FE /* Transaction+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD88E0EB2CC14ECF001261FE /* Transaction+extension.swift */; };
+		CD88E0EE2CC14F2C001261FE /* Date+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD88E0ED2CC14F2C001261FE /* Date+extension.swift */; };
+		CD88E0F02CC14F4E001261FE /* UINavigationBar+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD88E0EF2CC14F4E001261FE /* UINavigationBar+extension.swift */; };
 		CDC7AF262CBD61780022C4A4 /* TransactionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC7AF252CBD61780022C4A4 /* TransactionCell.swift */; };
 		CDC7AF2A2CBD947A0022C4A4 /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC7AF292CBD947A0022C4A4 /* Transaction.swift */; };
 /* End PBXBuildFile section */
@@ -80,6 +83,9 @@
 		CD88E0DD2CC0E5C0001261FE /* TransactionsTableSectionHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsTableSectionHeaderView.swift; sourceTree = "<group>"; };
 		CD88E0DF2CC0E613001261FE /* TransactionsListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsListViewModel.swift; sourceTree = "<group>"; };
 		CD88E0E12CC0E65B001261FE /* TransactionCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionCellViewModel.swift; sourceTree = "<group>"; };
+		CD88E0EB2CC14ECF001261FE /* Transaction+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Transaction+extension.swift"; sourceTree = "<group>"; };
+		CD88E0ED2CC14F2C001261FE /* Date+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+extension.swift"; sourceTree = "<group>"; };
+		CD88E0EF2CC14F4E001261FE /* UINavigationBar+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigationBar+extension.swift"; sourceTree = "<group>"; };
 		CDC7AF252CBD61780022C4A4 /* TransactionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionCell.swift; sourceTree = "<group>"; };
 		CDC7AF292CBD947A0022C4A4 /* Transaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -138,16 +144,19 @@
 			children = (
 				28257F6A295DC3AF008A886B /* AppDelegate.swift */,
 				28257F6C295DC3AF008A886B /* SceneDelegate.swift */,
-				28257F6E295DC3AF008A886B /* TransactionsListViewController.swift */,
 				28257F70295DC3AF008A886B /* Main.storyboard */,
 				28257F73295DC3B0008A886B /* Assets.xcassets */,
 				28257F75295DC3B0008A886B /* LaunchScreen.storyboard */,
 				28257F78295DC3B0008A886B /* Info.plist */,
-				CDC7AF252CBD61780022C4A4 /* TransactionCell.swift */,
 				CDC7AF292CBD947A0022C4A4 /* Transaction.swift */,
-				CD88E0DD2CC0E5C0001261FE /* TransactionsTableSectionHeaderView.swift */,
+				CD88E0EB2CC14ECF001261FE /* Transaction+extension.swift */,
 				CD88E0DF2CC0E613001261FE /* TransactionsListViewModel.swift */,
+				28257F6E295DC3AF008A886B /* TransactionsListViewController.swift */,
+				CDC7AF252CBD61780022C4A4 /* TransactionCell.swift */,
 				CD88E0E12CC0E65B001261FE /* TransactionCellViewModel.swift */,
+				CD88E0DD2CC0E5C0001261FE /* TransactionsTableSectionHeaderView.swift */,
+				CD88E0ED2CC14F2C001261FE /* Date+extension.swift */,
+				CD88E0EF2CC14F4E001261FE /* UINavigationBar+extension.swift */,
 			);
 			path = Transactions;
 			sourceTree = "<group>";
@@ -311,14 +320,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD88E0EC2CC14ECF001261FE /* Transaction+extension.swift in Sources */,
 				28257F6F295DC3AF008A886B /* TransactionsListViewController.swift in Sources */,
 				CD88E0E02CC0E613001261FE /* TransactionsListViewModel.swift in Sources */,
 				28257F6B295DC3AF008A886B /* AppDelegate.swift in Sources */,
 				CD88E0E22CC0E65B001261FE /* TransactionCellViewModel.swift in Sources */,
 				CDC7AF262CBD61780022C4A4 /* TransactionCell.swift in Sources */,
 				CD88E0DE2CC0E5C0001261FE /* TransactionsTableSectionHeaderView.swift in Sources */,
+				CD88E0EE2CC14F2C001261FE /* Date+extension.swift in Sources */,
 				28257F6D295DC3AF008A886B /* SceneDelegate.swift in Sources */,
 				CDC7AF2A2CBD947A0022C4A4 /* Transaction.swift in Sources */,
+				CD88E0F02CC14F4E001261FE /* UINavigationBar+extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -5,24 +5,27 @@
 //  Created by Ranjeet Balkawade on 14/10/2024.
 //
 
-import UIKit
-import BackbaseMDS
 
 import UIKit
 import BackbaseMDS
 
 class TransactionCell: UITableViewCell {
     
+    //MARK: - Internal properties
+    
     static let reuseIdentifier = "TransactionCell"
+    
+    //MARK: - Private properties
     
     private let containerView: UIView = {
         let view = UIView()
+        let shadow = BackbaseUI.shared.shadows.small
+        view.layer.shadowColor = shadow.color.cgColor
+        view.layer.shadowOpacity = shadow.opacity
+        view.layer.shadowOffset = shadow.offset
+        view.layer.shadowRadius = shadow.radius
         view.backgroundColor = BackbaseUI.shared.colors.surfacePrimary
         view.layer.cornerRadius = BackbaseUI.shared.radiuses.large
-        view.layer.shadowColor = BackbaseUI.shared.shadows.small.color.cgColor
-        view.layer.shadowOpacity = BackbaseUI.shared.shadows.small.opacity
-        view.layer.shadowOffset = BackbaseUI.shared.shadows.small.offset
-        view.layer.shadowRadius = BackbaseUI.shared.shadows.small.radius
         view.layer.masksToBounds = false
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
@@ -48,9 +51,7 @@ class TransactionCell: UITableViewCell {
     
     private let iconImageView: UIImageView = {
         let imageView = UIImageView()
-        imageView.image = UIImage(named: "transaction_debit")?.withRenderingMode(.alwaysTemplate)
         imageView.contentMode = .scaleAspectFit
-        imageView.tintColor = .red //BackbaseUI.shared.colors.primary
         imageView.translatesAutoresizingMaskIntoConstraints = false
         return imageView
     }()
@@ -60,7 +61,6 @@ class TransactionCell: UITableViewCell {
         label.textColor = BackbaseUI.shared.colors.textDefault
         label.font = BackbaseUI.shared.fonts.preferredFont(.footnote, .semibold)
         label.translatesAutoresizingMaskIntoConstraints = false
-        
         return label
     }()
     
@@ -98,7 +98,7 @@ class TransactionCell: UITableViewCell {
         return label
     }()
     
-    // MARK: - Initialization
+    // MARK: - Initializers
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
@@ -109,6 +109,30 @@ class TransactionCell: UITableViewCell {
         super.init(coder: coder)
         setupViews()
     }
+    
+    // MARK: - Life cycle methods
+    
+    override func prepareForReuse() {
+        super.prepareForReuse()
+        transactionCountLabel.text = nil
+        dateLabel.text = nil
+        descriptionLabel.attributedText = nil
+        amountLabel.text = nil
+    }
+    
+    //MARK: - Internal methods
+    
+    func configure(with viewModel: TransactionCellViewModel) {
+        iconImageView.image = viewModel.icon
+        iconImageView.tintColor = BackbaseUI.shared.colors.primary
+        transactionCountLabel.text = viewModel.transactionCount
+        dateLabel.text = viewModel.date
+        descriptionLabel.attributedText = NSMutableAttributedString(string: viewModel.description)
+        amountLabel.text = viewModel.amount
+        amountLabel.textColor = viewModel.amountColor
+    }
+    
+    //MARK: - Private methods
     
     private func setupViews() {
         backgroundColor = .clear
@@ -150,21 +174,4 @@ class TransactionCell: UITableViewCell {
         mainStackView.addArrangedSubview(amountLabel)
     }
     
-    func configure(with viewModel: TransactionCellViewModel) {
-        iconImageView.image = viewModel.icon
-        iconImageView.tintColor = BackbaseUI.shared.colors.primary
-        transactionCountLabel.text = viewModel.transactionCount
-        dateLabel.text = viewModel.date
-        descriptionLabel.attributedText = NSMutableAttributedString(string: viewModel.description)
-        amountLabel.text = viewModel.amount
-        amountLabel.textColor = viewModel.amountColor
-    }
-    
-    override func prepareForReuse() {
-        super.prepareForReuse()
-        transactionCountLabel.text = nil
-        dateLabel.text = nil
-        descriptionLabel.attributedText = nil
-        amountLabel.text = nil
-    }
 }

@@ -10,13 +10,17 @@ import BackbaseMDS
 
 class TransactionsTableSectionHeaderView: UIView {
     
-    let titleLabel: UILabel = {
+    //MARK: - Private properties
+    
+    private let titleLabel: UILabel = {
         let label = UILabel()
         label.textColor = BackbaseUI.shared.colors.textDefault
         label.font = BackbaseUI.shared.fonts.preferredFont(.title2, .semibold)
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
+    
+    //MARK: - Initializers
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -28,7 +32,15 @@ class TransactionsTableSectionHeaderView: UIView {
         setupViews()
     }
     
-    func setupViews() {
+    //MARK: - Internal methods
+    
+    func configure(title: String?) {
+        titleLabel.text = title
+    }
+    
+    //MARK: - Private methods
+    
+    private func setupViews() {
         backgroundColor = UIColor.clear
         addSubview(titleLabel)
         
@@ -39,10 +51,4 @@ class TransactionsTableSectionHeaderView: UIView {
             titleLabel.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -1 * BackbaseUI.shared.sizers.sm)
         ])
     }
-    
-    func configure(title: String) {
-        titleLabel.text = title
-    }
-    
 }
-
