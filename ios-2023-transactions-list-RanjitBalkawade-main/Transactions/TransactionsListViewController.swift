@@ -16,7 +16,7 @@ class TransactionsListViewController: UIViewController {
     
     //MARK: - Private properties
     
-    private var viewModel = TransactionsListViewModel()
+    private var viewModel = TransactionsListViewModel(userId: 10015)
     
     //MARK: - Life cycle methods
     
@@ -75,16 +75,16 @@ class TransactionsListViewController: UIViewController {
 extension TransactionsListViewController: UITableViewDataSource {
     
     func numberOfSections(in tableView: UITableView) -> Int {
-        viewModel.transactionCellViewModels.count
+        viewModel.numberOfSections()
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        viewModel.transactionCellViewModels[section].count
+        viewModel.numberOfItems(inSection: section)
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: TransactionCell.reuseIdentifier, for: indexPath) as! TransactionCell
-        cell.configure(with: viewModel.transactionCellViewModels[indexPath.section][indexPath.row])
+        cell.configure(with: viewModel.transactionCellViewModel(forIndexPath: indexPath))
         return cell
     }
     

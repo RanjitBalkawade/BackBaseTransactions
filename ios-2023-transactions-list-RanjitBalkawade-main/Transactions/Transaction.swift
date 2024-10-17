@@ -5,8 +5,6 @@
 //  Created by Ranjeet Balkawade on 14/10/2024.
 //
 
-import Foundation
-
 // MARK: - Transaction
 
 struct Transaction: Codable {
@@ -25,6 +23,22 @@ struct Transaction: Codable {
         case stateValue = "state"
         case transactionAmountCurrency
     }
+    
+    init(
+        id: String,
+        description: String,
+        creditDebitIndicatorValue: String,
+        creationTimeValue: String,
+        stateValue: String,
+        transactionAmountCurrency: TransactionAmountCurrency
+    ) {
+        self.id = id
+        self.description = description
+        self.creditDebitIndicatorValue = creditDebitIndicatorValue
+        self.creationTimeValue = creationTimeValue
+        self.stateValue = stateValue
+        self.transactionAmountCurrency = transactionAmountCurrency
+    }
 }
 
 // MARK: - TransactionAmountCurrency
@@ -32,4 +46,10 @@ struct Transaction: Codable {
 struct TransactionAmountCurrency: Codable {
     let amount: String
     let currencyCode: String
+    
+    init(amount: String, currencyCode: String) {
+        self.amount = amount
+        self.currencyCode = currencyCode
+    }
 }
+

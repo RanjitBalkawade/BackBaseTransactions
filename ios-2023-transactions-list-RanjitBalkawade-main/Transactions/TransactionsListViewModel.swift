@@ -9,13 +9,15 @@ import Foundation
 import Combine
 import BackbaseNetworking
 
+protocol TransactionsAPIProtocol {
+    func getTransactions(userId: Int) -> AnyPublisher<Data, BackbaseNetworking.BackbaseAPIError>
+}
+
+extension TransactionsAPI: TransactionsAPIProtocol {}
+
 class TransactionsListViewModel {
     
     //MARK: - Internal properties
-    
-    var transactionCellViewModels: [[TransactionCellViewModel]] {
-        [getCellViewModels(for: pendingTransactions), getCellViewModels(for: completedTransactions)].filter { $0.isEmpty == false }
-    }
     
     var title: String {
         "Transactions"
@@ -23,14 +25,26 @@ class TransactionsListViewModel {
     
     //MARK: - Private properties
     
+    private var transactionCellViewModels: [[TransactionCellViewModel]] {
+        [getCellViewModels(for: pendingTransactions), getCellViewModels(for: completedTransactions)].filter { $0.isEmpty == false }
+    }
+    
     private var pendingTransactions: [Transaction] = []
     private var completedTransactions: [Transaction] = []
     private var cancellables: Set<AnyCancellable> = []
     
+    private let userId: Int
+    private var transactionsApi: TransactionsAPIProtocol
+    
+    init(userId: Int, transactionsApi: TransactionsAPIProtocol = TransactionsAPI()) {
+        self.userId = userId
+        self.transactionsApi = transactionsApi
+    }
+    
     //MARK: - Internal methods
     
     func fetchTransactions(completion: @escaping (Result<Void, TransactionsListViewError>) -> Void) {
-        TransactionsAPI().getTransactions(userId: 10015)
+        transactionsApi.getTransactions(userId: userId)
             .decode(type: [Transaction].self, decoder: JSONDecoder())
             .receive(on: DispatchQueue.main)
             .sink(receiveCompletion: { [weak self] completionHandler in
@@ -50,6 +64,18 @@ class TransactionsListViewModel {
     
     func titleForSection(_ section: Int) -> String? {
         transactionCellViewModels[section].first?.title
+    }
+    
+    func numberOfItems(inSection section: Int) -> Int {
+        transactionCellViewModels[section].count
+    }
+    
+    func numberOfSections() -> Int {
+        transactionCellViewModels.count
+    }
+    
+    func transactionCellViewModel(forIndexPath indexPath: IndexPath) -> TransactionCellViewModel {
+        transactionCellViewModels[indexPath.section][indexPath.row]
     }
     
     //MARK: - Private methods
@@ -149,3 +175,4 @@ private struct GroupingKey: Hashable {
     let creditDebitIndicator: CreditDebitIndicator?
     let creationTimeWithoutTime: Date?
 }
+
