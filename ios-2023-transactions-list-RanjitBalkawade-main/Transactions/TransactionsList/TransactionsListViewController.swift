@@ -19,7 +19,7 @@ class TransactionsListViewController: UIViewController {
     //MARK: - Private properties
     
     /// Responsible for managing transactions data and providing it to the view
-    private var viewModel = TransactionsListViewModel(userId: 10011)
+    private var viewModel = TransactionsListViewModel(userId: 10015)
     
     //MARK: - Life cycle methods
     
