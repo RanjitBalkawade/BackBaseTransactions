@@ -42,40 +42,36 @@ class TransactionsListViewModel {
     private let userId: Int
     
     /// API service for fetching transactions data.
-    private var transactionsApi: TransactionsAPIProtocol
+    private let transactionService: TransactionServiceProtocol
     
-    /// Initializes the view model with a given user ID and API protocol.
+    /// Initializes the view model with a given user ID and transaction service.
     /// - Parameters:
     ///   - userId: The ID of the user for whom transactions are fetched.
-    ///   - transactionsApi: The API protocol for fetching transactions. Defaults to `TransactionsAPI()`.
-    init(userId: Int, transactionsApi: TransactionsAPIProtocol = TransactionsAPI()) {
+    ///   - transactionService: The service for fetching transactions.
+    init(userId: Int, transactionService: TransactionServiceProtocol = TransactionService()) {
         self.userId = userId
-        self.transactionsApi = transactionsApi
+        self.transactionService = transactionService
     }
     
     //MARK: - Internal methods
     
-    /// Fetches transactions from the API and processes the response.
+    /// Fetches transactions and processes the response.
     /// - Parameters:
     ///   - completion: Completion handler returning either success or failure with an error.
     func fetchTransactions(completion: @escaping (Result<Void, TransactionsListViewError>) -> Void) {
-        transactionsApi.getTransactions(userId: userId)
-            .decode(type: [Transaction].self, decoder: JSONDecoder())
-            .receive(on: DispatchQueue.main)
-            .sink(
-                receiveCompletion:{ [weak self] completionHandler in
-                    self?.handleCompletion(completionHandler, completion: completion)
-                },
-                receiveValue: { [weak self] transactions in
-                    guard transactions.isEmpty == false else {
+        transactionService.fetchTransactions(userId: userId) { [weak self] result in
+            switch result {
+                case .success(let transactions):
+                    guard !transactions.isEmpty else {
                         completion(.failure(TransactionsListViewError.noTransactions))
                         return
                     }
                     self?.processData(transactions: transactions)
                     completion(.success(()))
-                }
-            )
-            .store(in: &cancellables)
+                case .failure(let error):
+                    completion(.failure(self?.mapAPIErrorToViewError(error) ?? .unknown))
+            }
+        }
     }
     
     /// Returns the title for a specific section in the table view.

@@ -77,6 +77,7 @@
 		CD88E1002CC1803F001261FE /* Tests */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Tests; sourceTree = "<group>"; };
 		CD88E1012CC1805B001261FE /* Mocking */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Mocking; sourceTree = "<group>"; };
 		CD88E1202CC1AB98001261FE /* Mocking */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Mocking; sourceTree = "<group>"; };
+		CD88E1252CC2089B001261FE /* Services */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Services; sourceTree = "<group>"; };
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +132,7 @@
 		28257F69295DC3AF008A886B /* Transactions */ = {
 			isa = PBXGroup;
 			children = (
+				CD88E1252CC2089B001261FE /* Services */,
 				CD88E0FD2CC17F5F001261FE /* TransactionsList */,
 				CD88E0FF2CC17FE0001261FE /* Extensions */,
 				CD88E0FE2CC17F8B001261FE /* Model */,
@@ -193,6 +195,7 @@
 				CD88E0FE2CC17F8B001261FE /* Model */,
 				CD88E0FF2CC17FE0001261FE /* Extensions */,
 				CD88E1202CC1AB98001261FE /* Mocking */,
+				CD88E1252CC2089B001261FE /* Services */,
 			);
 			name = Transactions;
 			productName = Transactions;

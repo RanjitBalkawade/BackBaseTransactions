@@ -9,28 +9,27 @@ import XCTest
 import BackbaseNetworking
 @testable import Transactions
 
-final class TransactionsListViewModelTests: XCTestCase {
+class TransactionsListViewModelTests: XCTestCase {
     
     private var viewModel: TransactionsListViewModel!
-    private var mockAPI: MockTransactionsAPI!
-    private var mockData: Data!
+    private var mockService: MockTransactionService!
+    private var mockTransactions: [Transaction]!
     
     override func setUp() {
         super.setUp()
-        mockAPI = MockTransactionsAPI()
-        mockData = MockHelper.loadJsonData(filename: "Transactions")!
-        viewModel = TransactionsListViewModel(userId: 0, transactionsApi: mockAPI)
+        mockService = MockTransactionService()
+        mockTransactions = MockHelper.mockTransactions
+        viewModel = TransactionsListViewModel(userId: 0, transactionService: mockService)
     }
     
     override func tearDown() {
-        mockAPI = nil
-        mockData = nil
+        mockService = nil
         viewModel = nil
         super.tearDown()
     }
     
     func testFetchTransactions_withSuccess() {
-        mockAPI.result = .success(mockData)
+        mockService.result = .success(mockTransactions)
         
         let expectation = self.expectation(description: "Transactions fetched successfully")
         
@@ -48,7 +47,7 @@ final class TransactionsListViewModelTests: XCTestCase {
     }
     
     func testFetchTransactions_withFailure() {
-        mockAPI.result = .failure(BackbaseAPIError.offline)
+        mockService.result = .failure(BackbaseAPIError.offline)
         
         let expectation = self.expectation(description: "Fetching transactions failed")
         
@@ -66,8 +65,8 @@ final class TransactionsListViewModelTests: XCTestCase {
     }
     
     func testFetchTransactions_withNoTransactions() {
-        let emptyData = "[]".data(using: .utf8)!
-        mockAPI.result = .success(emptyData)
+        let emptyTransactions: [Transaction] = []
+        mockService.result = .success(emptyTransactions)
         
         let expectation = self.expectation(description: "Fetching transactions returned no data")
         
@@ -85,7 +84,7 @@ final class TransactionsListViewModelTests: XCTestCase {
     }
     
     func testTitleForSection() {
-        mockAPI.result = .success(mockData)
+        mockService.result = .success(mockTransactions)
         
         let expectation = self.expectation(description: "Fetched transactions and checked section titles")
         
@@ -104,7 +103,7 @@ final class TransactionsListViewModelTests: XCTestCase {
     }
     
     func testNumberOfSections() {
-        mockAPI.result = .success(mockData)
+        mockService.result = .success(mockTransactions)
         
         let expectation = self.expectation(description: "Fetched transactions and checked number of sections")
         
@@ -123,7 +122,7 @@ final class TransactionsListViewModelTests: XCTestCase {
     }
     
     func testNumberOfItemsInSection() {
-        mockAPI.result = .success(mockData)
+        mockService.result = .success(mockTransactions)
         
         let expectation = self.expectation(description: "Fetched transactions and checked number of items in sections")
         
@@ -131,7 +130,7 @@ final class TransactionsListViewModelTests: XCTestCase {
             switch result {
                 case .success:
                     XCTAssertEqual(self.viewModel.numberOfItems(inSection: 0), 1, "Expected 1 item in the first section.")
-                    XCTAssertEqual(self.viewModel.numberOfItems(inSection: 1), 3, "Expected 3 item in the second section.")
+                    XCTAssertEqual(self.viewModel.numberOfItems(inSection: 1), 3, "Expected 3 items in the second section.")
                     expectation.fulfill()
                 case .failure(let error):
                     XCTFail("Expected success, but got error: \(error)")
@@ -142,7 +141,7 @@ final class TransactionsListViewModelTests: XCTestCase {
     }
     
     func testTransactionCellViewModelForIndexPath() {
-        mockAPI.result = .success(mockData)
+        mockService.result = .success(mockTransactions)
         
         let expectation = self.expectation(description: "Fetched transactions and checked cell view model for index path")
         
@@ -165,6 +164,7 @@ final class TransactionsListViewModelTests: XCTestCase {
                     let indexPath4 = IndexPath(row: 2, section: 1)
                     let cellViewModel4 = self.viewModel.transactionCellViewModel(forIndexPath: indexPath4)
                     XCTAssertEqual(cellViewModel4.description, "Test2\nTest3", "Expected the description to be 'Test2\nTest3'")
+                    
                     
                     expectation.fulfill()
                 case .failure(let error):
